@@ -1,0 +1,124 @@
+\documentclass[svgnames]{beamer}
+\usetheme{Dresden}
+\usecolortheme{beaver}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage{colortbl}
+\title{An experimental study of the learnability of congestion control}
+\author{Anirudh~Sivaraman, Keith~Winstein, Pratiksha~Thaker, Hari~Balakrishnan}
+\institute{MIT CSAIL\vspace{\baselineskip}}
+%\\\textcolor{DarkBlue}{http://web.mit.edu/anirudh/www/sdn-data-plane.html}}
+%\date{}
+
+
+\begin{document}
+
+\begin{frame}[plain]
+
+\titlepage
+
+\end{frame}
+
+\begin{Large}
+\begin{frame}[plain]
+\frametitle{Designing congestion-control protocols today}
+\begin{itemize}
+\item Formulate a mental model of the target network and application workload
+\item Decide on the protocol's goal
+\item Design a protocol to achieve this goal on the target network
+\item Model and goal can either be implicit or explicit
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{But, the model is always wrong ...}
+\begin{itemize}
+\item Bufferbloat when queues are incorrectly sized
+\item Diminished fairness and unpredictability in small-packet regimes
+\item Incast in datacenters
+\item Lost throughput under stochastic loss 
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Our work}
+\begin{itemize}
+\item Can we formalize this design process?
+\item Quantify consequences of model mismatch
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Approach}
+\begin{itemize}
+\item Specify a \textit{training scenario} for training.
+\begin{itemize}
+\item Topology
+\item Locations of senders and receiver
+\item Application workload
+\item Buffer size and queuing discipline 
+\end{itemize}
+\item Specify an \textit{objective function}
+\item Synthesize a protocol using an automated protocol-synthesis tool, Remy~\cite{remy}
+\item Evaluate on a \textit{testing scenario} inside ns-2
+\item Difference between training and testing scenario represents model imperfection
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Automated protocol synthesis}
+\begin{itemize}
+\item Find best protocol for an imperfect network model.
+\item Problem is NEXP-complete. 
+\item Rely on Remy to produce Tractable Attempts at Optimal (TAO) congestion-control protocols.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Tractable Attempts at Optimal}
+\begin{itemize}
+\item Just how suboptimal are these TAO protocols?
+\item  
+\item
+\end{itemize}
+\end{frame}
+
+\input linkspeed
+
+\begin{frame}[plain]
+\frametitle{Workload imperfections}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{RTT imperfections}
+\end{frame}
+
+\input topology
+
+\input compatibility
+
+\begin{frame}[plain]
+\frametitle{Coping with diverse application requirements}
+
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Related Work}
+\begin{itemize}
+\item PAC
+\item Transfer learning
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Limitations and future work}
+\begin{itemize}
+\item Better characterization of optimal protocols
+\item Extending protocol-generation to in-network algorithms as well.
+\item Characterize model imperfections between simulation and the real world.
+\item Why are the results the way they are?
+\end{itemize}
+\end{frame}
+\end{Large}
+
+\end{document}
