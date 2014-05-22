@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="1053.2291"
+   height="472.55005"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="march.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10000"
+     gridtolerance="10000"
+     guidetolerance="10000"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="824"
+     id="namedview131"
+     showgrid="true"
+     inkscape:snap-global="false"
+     inkscape:zoom="1"
+     inkscape:cx="526.61456"
+     inkscape:cy="219.30406"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     showguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3108"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow2Lend"
+       style="overflow:visible">
+      <path
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         id="path3780"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow2Lendq"
+       style="overflow:visible">
+      <path
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         id="path4208"
+         style="fill:#000080;fill-rule:evenodd;stroke:#000080;stroke-width:0.625;stroke-linejoin:round" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <text
+     sodipodi:linespacing="125%"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+     xml:space="preserve"
+     id="text5292"
+     y="566.36743"
+     x="-100.92179"><tspan
+       id="tspan5294"
+       y="566.36743"
+       x="-100.92179" /></text>
+  <g
+     id="layer2" />
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000080;stroke-width:6.00000048;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow2Lendq)"
+     id="path2985"
+     d="m 69.76002,124.90866 931.71058,0" />
+  <rect
+     width="77.933578"
+     height="45.343174"
+     x="191.37831"
+     y="230.86406"
+     id="rect4222-9-8-0"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="197.81453"
+     y="264.83163"
+     id="text4224-23-1-0"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="197.81453"
+       y="264.83163"
+       id="tspan4226-8-8-9"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">RED</tspan></text>
+  <rect
+     width="96.35424"
+     height="45.343174"
+     x="321.50772"
+     y="169.25194"
+     id="rect4222-9-8-1"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="327.94397"
+     y="203.21947"
+     id="text4224-23-1-1"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="327.94397"
+       y="203.21947"
+       id="tspan4226-8-8-0"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">BLUE</tspan></text>
+  <rect
+     width="80.767525"
+     height="45.343174"
+     x="428.76743"
+     y="169.52791"
+     id="rect4222-9-8-7"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="435.20367"
+     y="203.49544"
+     id="text4224-23-1-7"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="435.20367"
+       y="203.49544"
+       id="tspan4226-8-8-03"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">ECN</tspan></text>
+  <rect
+     width="123.17525"
+     height="47.241676"
+     x="493.95715"
+     y="286.62225"
+     id="rect4222-9-8-3"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5.10149908;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="500.34265"
+     y="322.53909"
+     id="text4224-23-1-16"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="500.34265"
+       y="322.53909"
+       id="tspan4226-8-8-3"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">CHOKe</tspan></text>
+  <rect
+     width="82.184502"
+     height="45.343174"
+     x="399.35925"
+     y="230.58809"
+     id="rect4222-9-8-90"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="405.79547"
+     y="264.5556"
+     id="text4224-23-1-2"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="405.79547"
+       y="264.5556"
+       id="tspan4226-8-8-60"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">AVQ</tspan></text>
+  <rect
+     width="77.933578"
+     height="45.343174"
+     x="523.65802"
+     y="169.52791"
+     id="rect4222-9-8-97"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="530.09424"
+     y="203.49544"
+     id="text4224-23-1-40"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="530.09424"
+       y="203.49544"
+       id="tspan4226-8-8-23"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">XCP</tspan></text>
+  <rect
+     width="77.933578"
+     height="45.343174"
+     x="498.16098"
+     y="231.46432"
+     id="rect4222-9-8-18"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="504.59726"
+     y="265.43192"
+     id="text4224-23-1-8"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="504.59726"
+       y="265.43192"
+       id="tspan4226-8-8-8"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">VCP</tspan></text>
+  <rect
+     width="79.350548"
+     height="45.343174"
+     x="611.17499"
+     y="170.40414"
+     id="rect4222-9-8-2"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="617.61121"
+     y="204.37173"
+     id="text4224-23-1-82"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="617.61121"
+       y="204.37173"
+       id="tspan4226-8-8-81"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">RCP</tspan></text>
+  <rect
+     width="123.27676"
+     height="45.343174"
+     x="700.93939"
+     y="169.52792"
+     id="rect4222-9-8-8"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="703.37561"
+     y="203.49551"
+     id="text4224-23-1-22"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="703.37561"
+       y="203.49551"
+       id="tspan4226-8-8-95"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">DCTCP</tspan></text>
+  <rect
+     width="104.90746"
+     height="44.394543"
+     x="678.60767"
+     y="229.80994"
+     id="rect4222-9-8-35"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:4.94863224;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="685.06964"
+     y="262.80313"
+     id="text4224-23-1-74"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="685.06964"
+       y="262.80313"
+       id="tspan4226-8-8-75"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">CoDel</tspan></text>
+  <rect
+     width="83.601471"
+     height="45.343174"
+     x="835.05682"
+     y="168.65169"
+     id="rect4222-9-8-87"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="841.4931"
+     y="202.61922"
+     id="text4224-23-1-80"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="841.4931"
+       y="202.61922"
+       id="tspan4226-8-8-233"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">PDQ</tspan></text>
+  <rect
+     width="119.12938"
+     height="43.446724"
+     x="919.44586"
+     y="230.00394"
+     id="rect4222-9-8-699"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:4.89645052;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="925.93384"
+     y="262.02325"
+     id="text4224-23-1-38"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="925.93384"
+       y="262.02325"
+       id="tspan4226-8-8-48"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">pFabric</tspan></text>
+  <path
+     d="m 174.5587,113.39343 0,22.81906"
+     id="path6013"
+     style="fill:none;stroke:#000080;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 405.52549,113.39343 0,22.81906"
+     id="path6013-9"
+     style="fill:none;stroke:#000080;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 738.51441,113.39343 0,22.81906"
+     id="path6013-1"
+     style="fill:none;stroke:#000080;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:connector-curvature="0" />
+  <rect
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="rect4222-9-8-8-7"
+     y="229.71185"
+     x="795.54071"
+     height="45.343174"
+     width="109.67868" />
+  <text
+     sodipodi:linespacing="125%"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     xml:space="preserve"
+     id="text4224-23-1-22-2"
+     y="263.67944"
+     x="801.97693"><tspan
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+       id="tspan6230"
+       y="263.67944"
+       x="801.97693">D²TCP</tspan></text>
+  <text
+     sodipodi:linespacing="125%"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000080;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+     xml:space="preserve"
+     id="text3992"
+     y="116.86552"
+     x="95.159409"><tspan
+       style="font-size:20px"
+       id="tspan3994"
+       y="116.86552"
+       x="95.159409">1980s</tspan></text>
+  <text
+     sodipodi:linespacing="125%"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000080;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+     xml:space="preserve"
+     id="text3992-9"
+     y="116.86552"
+     x="270.34845"><tspan
+       style="font-size:20px"
+       id="tspan3994-6"
+       y="116.86552"
+       x="270.34845">1990s</tspan></text>
+  <text
+     sodipodi:linespacing="125%"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000080;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+     xml:space="preserve"
+     id="text3992-7"
+     y="116.86552"
+     x="553.18848"><tspan
+       style="font-size:20px"
+       id="tspan3994-3"
+       y="116.86552"
+       x="553.18848">2000s</tspan></text>
+  <text
+     sodipodi:linespacing="125%"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000080;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+     xml:space="preserve"
+     id="text3992-3"
+     y="116.86552"
+     x="788.64539"><tspan
+       style="font-size:20px"
+       id="tspan3994-1"
+       y="116.86552"
+       x="788.64539">2010s</tspan></text>
+  <rect
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5.10114717;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="rect4222-9-8-8-7-7"
+     y="286.31866"
+     x="694.40814"
+     height="47.242027"
+     width="104.32015" />
+  <text
+     sodipodi:linespacing="125%"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     xml:space="preserve"
+     id="text4224-23-1-22-2-2"
+     y="322.23569"
+     x="700.79376"><tspan
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+       id="tspan6230-4"
+       y="322.23569"
+       x="700.79376">DeTail</tspan></text>
+  <rect
+     width="81.541145"
+     height="43.44582"
+     x="84.263176"
+     y="170.35283"
+     id="rect4222-9-8-0-8"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:4.8973546;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="93.707748"
+     y="202.56375"
+     id="text4224-23-1-0-6"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="93.707748"
+       y="202.56375"
+       id="tspan4226-8-8-9-6"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">GPS</tspan></text>
+  <rect
+     width="85.819656"
+     height="45.343174"
+     x="77.428406"
+     y="229.58809"
+     id="rect4222-9-8-0-8-3"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="83.600487"
+     y="263.17163"
+     id="text4224-23-1-0-6-1"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="83.600487"
+       y="263.17163"
+       id="tspan4226-8-8-9-6-6"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">WFQ</tspan></text>
+  <rect
+     width="81.387985"
+     height="46.292664"
+     x="316.81793"
+     y="286.30176"
+     id="rect4222-9-8-0-8-5"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5.05051184;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="324.18591"
+     y="321.4361"
+     id="text4224-23-1-0-6-9"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="324.18591"
+       y="321.4361"
+       id="tspan4226-8-8-9-6-7"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">DRR</tspan></text>
+  <rect
+     width="81.438499"
+     height="45.343174"
+     x="586.67169"
+     y="231.32152"
+     id="rect4222-9-8-0-8-5-4"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="594.06494"
+     y="265.48114"
+     id="text4224-23-1-0-6-9-8"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="594.06494"
+       y="265.48114"
+       id="tspan4226-8-8-9-6-7-8"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">SRR</tspan></text>
+  <rect
+     width="179.95883"
+     height="43.096992"
+     x="3.3489883"
+     y="286.77094"
+     id="rect4222-9-8-0-8-6"
+     style="fill:#00ff00;fill-opacity:0.50196078000000000;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="9.6191454"
+     y="319.80743"
+     id="text4224-23-1-0-6-3"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="9.6191454"
+       y="319.80743"
+       id="tspan4226-8-8-9-6-9"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">VirtualClock</tspan></text>
+  <rect
+     width="111.31242"
+     height="44.549023"
+     x="193.45065"
+     y="286.92114"
+     id="rect4222-9-8-0-8-6-7"
+     style="fill:#00ff00;fill-opacity:0.50196078000000000;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="200.44682"
+     y="320.68365"
+     id="text4224-23-1-0-6-3-0"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="200.44682"
+       y="320.68365"
+       id="tspan4226-8-8-9-6-9-7"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">IntServ</tspan></text>
+  <rect
+     width="98.493019"
+     height="44.873081"
+     x="285.48343"
+     y="230.68034"
+     id="rect4222-9-8-0-8-5-1"
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="292.64163"
+     y="264.60489"
+     id="text4224-23-1-0-6-9-7"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="292.64163"
+       y="264.60489"
+       id="tspan4226-8-8-9-6-7-4"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">CSFQ</tspan></text>
+  <rect
+     width="123.29525"
+     height="44.264618"
+     x="187.21173"
+     y="169.64845"
+     id="rect4222-9-8-0-8-6-7-6"
+     style="fill:#00ff00;fill-opacity:0.50196078000000000;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="194.06569"
+     y="203.26875"
+     id="text4224-23-1-0-6-3-0-5"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="194.06569"
+       y="203.26875"
+       id="tspan4226-8-8-9-6-9-7-2"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">DiffServ</tspan></text>
+  <rect
+     width="73.609444"
+     height="46.367004"
+     x="932.75427"
+     y="167.72102"
+     id="rect4222-9-8-699-5"
+     style="fill:#00ff00;fill-opacity:0.50196078000000000;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <text
+     x="939.70239"
+     y="202.20045"
+     id="text4224-23-1-38-1"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"><tspan
+       x="939.70239"
+       y="202.20045"
+       id="tspan4226-8-8-48-2"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">FCP</tspan></text>
+  <rect
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5.09741974;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="rect4222-9-8-3-1-9"
+     y="285.55469"
+     x="413.24521"
+     height="48.539307"
+     width="69.913185" />
+  <text
+     sodipodi:linespacing="125%"
+     style="font-size:41.24028015px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     xml:space="preserve"
+     id="text4224-23-1-16-8-0"
+     transform="scale(1.031007,0.96992552)"
+     y="331.98059"
+     x="406.4798"><tspan
+       style="font-size:32.99222183px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+       id="tspan4226-8-8-3-9-8"
+       y="331.98059"
+       x="406.4798">RIO</tspan></text>
+  <rect
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5.0497427;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="rect4222-9-8-0-8-6-3"
+     y="286.7084"
+     x="810.63873"
+     height="46.736645"
+     width="66.936043" />
+  <text
+     sodipodi:linespacing="125%"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     xml:space="preserve"
+     id="text4224-23-1-0-6-3-03"
+     y="322.94098"
+     x="819.22876"><tspan
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+       id="tspan4226-8-8-9-6-9-5"
+       y="322.94098"
+       x="819.22876">PIE</tspan></text>
+  <rect
+     width="75.074554"
+     height="45.350727"
+     x="886.96271"
+     y="287.37469"
+     id="rect4222-9-8-699-9"
+     style="fill:#00ff00;fill-opacity:0.50196078000000000;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:20,5;stroke-dashoffset:0" />
+  <text
+     x="895.67444"
+     y="320.41602"
+     id="text4224-23-1-38-8"
+     xml:space="preserve"
+     style="font-size:39.1183815px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"
+     transform="scale(0.99780354,1.0022013)"><tspan
+       x="895.67444"
+       y="320.41602"
+       id="tspan4226-8-8-48-0"
+       style="font-size:31.29470444px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">RC3</tspan></text>
+  <rect
+     style="fill:#00ff00;fill-opacity:0.50196078;stroke:#000000;stroke-width:5.04869223;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="rect4222-9-8-0-8-6-3-2"
+     y="287.41269"
+     x="630.26294"
+     height="47.274731"
+     width="51.474129" />
+  <text
+     sodipodi:linespacing="125%"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     xml:space="preserve"
+     id="text4224-23-1-0-6-3-03-1"
+     y="321.91431"
+     x="640.12195"><tspan
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+       id="tspan4226-8-8-9-6-9-5-2"
+       y="321.91431"
+       x="640.12195">PI</tspan></text>
+  <rect
+     width="75.074554"
+     height="46.27095"
+     x="971.46271"
+     y="287.41458"
+     id="rect4222-9-8-699-9-0"
+     style="fill:#00ff00;fill-opacity:0.50196078000000000;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:20,5;stroke-dashoffset:0" />
+  <text
+     x="986.20758"
+     y="317.92966"
+     id="text4224-23-1-38-8-0"
+     xml:space="preserve"
+     style="font-size:39.51326752px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Math;-inkscape-font-specification:Latin Modern Math"
+     sodipodi:linespacing="125%"
+     transform="scale(0.9878317,1.0123182)"><tspan
+       x="986.20758"
+       y="317.92966"
+       id="tspan4226-8-8-48-0-3"
+       style="font-size:31.61061478px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans">MCP</tspan></text>
+</svg>

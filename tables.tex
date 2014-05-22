@@ -1,0 +1,102 @@
+\begin{tabular}{p{0.45\columnwidth}p{12 pt}p{0.45\columnwidth}}
+
+\begin{minipage}{0.45 \columnwidth}
+%\centering
+CoDel+FCFS beats CoDel+FQ; LTE
+\begin{tabular}{| p{6cm} |p{8cm} | }
+\hline
+Nwk config. & Avg. tpt. \\
+\hline
+CoDel+FCFS & \cellcolor{green!20} 1.99 Mbps \\
+\hline
+CoDel+FQ & \cellcolor{red!20} 1.89 Mbps \\
+\hline
+\end{tabular}
+\label{t:cfsbeatscfq}
+\end{minipage} & &
+
+\begin{minipage}{0.45 \columnwidth}
+CoDel+FQ beats CoDel+FCFS; 15 Mbps
+\begin{tabular}{| p{5cm} |p{7.0cm} | p{6cm} | }
+\hline
+Nwk config. & Bulk Tpt. & Web Tail FCT  \\
+\hline
+CoDel+FCFS & 9.47 Mbps & \cellcolor{red!20} 22.25 secs \\
+\hline
+CoDel+FQ & 9.47 Mbps & \cellcolor{green!20} 18.70 secs \\
+\hline
+\end{tabular}
+\label{t:cfqbeatscfs}
+%\caption{CoDel+FQ vs.~CoDel+FCFS}
+\end{minipage} \\
+
+\end{tabular}
+\\
+\begin{tabular}{p{0.45\columnwidth}p{12 pt}p{0.45\columnwidth}}
+
+\begin{minipage}{0.45 \columnwidth}
+%\centering
+Bufferbloat+FQ beats Codel+FQ; LTE
+\begin{tabular}{| p{6cm} |p{4.5cm} | p{5.0cm} | }
+\hline
+Nwk config. & Bulk Tpt. & Web Tail FCT\\
+\hline
+Bufferbloat+FQ & \cellcolor{green!20} 11.07 Mbps & \cellcolor{green!20} 23 secs \\
+\hline
+CoDel+FQ & \cellcolor{red!20} 3.86 Mbps & \cellcolor{red!20} 40 secs \\
+\hline
+\end{tabular}
+\label{t:bfqbeatscfq}
+\end{minipage} & &
+
+\begin{minipage}{0.45 \columnwidth}
+CoDel+FQ beats Bufferbloat+FQ; 15 Mbps
+\begin{tabular}{| p{6cm} |p{8cm}| p{6cm}| }
+\hline
+Nwk config. & Avg. tpt., delay & Power\\
+\hline
+Bufferbloat+FQ  & 7.47 Mbps, 62000 ms & \cellcolor{red!20} 0.12 $Mbit/s^{2}$ \\
+\hline
+CoDel+FQ & 6.55 Mbps, 76.5 ms  & \cellcolor{green!20} 85.6 $Mbit/s^{2}$\\
+\hline
+\end{tabular}
+\label{t:cfqbeatsbfq}
+%\caption{CoDel+FQ vs.~Bufferbloat+FQ; Power is tpt./delay.}
+\end{minipage} \\
+
+\end{tabular}
+
+
+\begin{tabular}{p{0.45\columnwidth}p{12 pt}p{0.45\columnwidth}}
+
+\begin{minipage}{0.45 \columnwidth}
+%\centering
+Bufferbloat+FQ beats CoDel+FCFS; LTE
+\begin{tabular}{| p{6.0cm} |p{8.0cm} |  }
+\hline
+Nwk config. & Bulk tpt.  \\
+\hline
+Bufferbloat+FQ & \cellcolor{green!20} 11.96 Mbps \\
+\hline
+CoDel+FCFS & \cellcolor{red!20} 4.35 Mbps \\
+\hline
+\end{tabular}
+\label{t:bfqbeatscfs}
+\end{minipage} & &
+
+\begin{minipage}{0.45 \columnwidth}
+CoDel+FCFS beats Bufferbloat+FQ; LTE
+\begin{tabular}{| p{6cm} |p{8.5cm} |p{5.5cm}| }
+\hline
+Nwk config. & Tpt., delay & Power\\
+\hline
+Bufferbloat+FQ & 11.96 Mbps, 46000~ms & \cellcolor{red!20} 0.25 $Mbit/s^{2}$\\
+\hline
+CoDel+FCFS & 4.35 Mbps, 78.2~ms & \cellcolor{green!20}55.62 $Mbit/s^{2}$ \\
+\hline
+\end{tabular}
+\label{t:cfsbeatsbfq}
+%\caption{CoDel+FCFS vs.~Bufferbloat+FQ; Power is tpt./delay.}
+\end{minipage} \\
+
+\end{tabular}

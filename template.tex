@@ -1,0 +1,41 @@
+%
+% This is a template for a CSAIL poster to be displayed in the
+% Dreyfoos 4 hallway.  It may be extended in the future to support
+% other poster formats, so the options shown below are mandatory.
+%
+% To format this poster, use the following steps (yes, they are all
+% necessary):
+%
+% latex myposter		N.B.: not compatable with pdftex!
+% latex myposter
+% dvips -o myposter.ps myposter
+% ps2pdf14 myposter.ps myposter.pdf
+% Open myposter.pdf in Adobe Reader (sorry, xpdf is buggy and does not
+% print large page sizes correctly) and print.  The same caveat
+% applies to using "lpr" to print the .pdf directly: CSAIL's print
+% system uses xpdf internally.
+%
+\documentclass[csaild4,portrait]{xa0poster}
+\usepackage[noborder]{csailposter}
+%
+% All of the following descriptive information is mandatory.
+% The "left" and "right" authors, if supplied, will result in a two-
+% or three-column layout (depending on whether the "" author is empty
+% or not.  Currently, only the CSAIL logo is supported, but it should
+% be possible to adapt the "csailposter" package to print additional
+% logos for projects involving other labs or institutions.  (It is
+% based on a package from Edinburgh University which already supports
+% this, but the dimensions may need to be adjusted.)
+%
+\title{A Test of the CSAIL D4 Poster template}
+\author{Ben Bitdiddle}
+\affiliation{The Infrastructure Group}
+\email{bitdiddl@csail.mit.edu}
+\authorleft{}\affiliationleft{}\emailleft{}
+\authorright{}\affiliationright{}\emailright{}
+\begin{document}
+\maketitle
+
+\input lorem-ipsum.tex
+
+\end{document}

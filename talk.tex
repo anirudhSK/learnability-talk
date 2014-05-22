@@ -1,0 +1,42 @@
+%
+% This is a template for a CSAIL poster to be displayed in the
+% Dreyfoos 4 hallway.  It may be extended in the future to support
+% other poster formats, so the options shown below are mandatory.
+%
+% To format this poster, use the following steps (yes, they are all
+% necessary):
+%
+% latex myposter		N.B.: not compatable with pdftex!
+% latex myposter
+% dvips -o myposter.ps myposter
+% ps2pdf14 myposter.ps myposter.pdf
+% Open myposter.pdf in Adobe Reader (sorry, xpdf is buggy and does not
+% print large page sizes correctly) and print.  The same caveat
+% applies to using "lpr" to print the .pdf directly: CSAIL's print
+% system uses xpdf internally.
+%
+\documentclass[svgnames]{beamer}
+\usetheme{Dresden}
+\usecolortheme{beaver}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage{colortbl}
+\title{No Silver Bullet: \\ Extending SDN to the Data Plane}
+\title{Extending SDN to the Data Plane}
+\author{Anirudh~Sivaraman, Keith~Winstein, Suvinay~Subramanian, Hari~Balakrishnan}
+\institute{M.I.T.\\\vspace{\baselineskip}\textcolor{DarkBlue}{http://web.mit.edu/anirudh/www/sdn-data-plane.html}}
+\date{}
+
+
+\begin{document}
+
+\begin{frame}[plain]
+
+\titlepage
+
+\end{frame}
+
+
+\input sdndata
+
+\end{document}

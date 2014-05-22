@@ -1,0 +1,17 @@
+See the comments in template.tex for more information about how to use
+the template.  (You should probably copy it to another name first.)
+Presently, it only supports making posters for the Dreyfoos fourth-floor
+hallway displays.  The finished poster is 30.5 inches wide and 55 inches
+tall, centered on media measuring 42" W x 60" H.
+
+For assistance, send mail to <help@csail.mit.edu>.  We would appreciate
+hearing about any improvements or modifications you make.  (We are
+particularly interested making this template useful for traditional
+conference posters at A0 or A1 sizes in addition to the odd size supported
+by this package.  This mostly involves changing the way dimensions are
+handled to depend on the paper size.)
+
+This template is based on the work of Rob Clark for Edinburgh
+University.  In private communication, he writes:
+
+> Sure, do whatever you like with them, assume a BSD style license.

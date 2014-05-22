@@ -1,0 +1,288 @@
+\begin{Large}
+\begin{frame}[plain]
+\frametitle{Switch Data Planes today}
+Two key decisions on a per-packet basis:
+\begin{itemize}
+\item[]
+\item {\bf Scheduling}: Which packet to transmit next?
+\item[]
+\item {\bf Queue Management}: How long can queues grow? Which packet to drop?
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{The long lineage of in-network algorithms}
+%\only<1>{\noindent \hspace{-.75 cm} \includegraphics[width=1.0\textwidth]{march-5.pdf}}
+\only<1>{\noindent \hspace{-.75 cm} \includegraphics[width=1.0\textwidth]{march-4.pdf}}
+\only<2>{\noindent \hspace{-.75 cm} \includegraphics[width=1.0\textwidth]{march-3.pdf}}
+\only<3>{\noindent \hspace{-.75 cm} \includegraphics[width=1.0\textwidth]{march-2.pdf}}
+\only<4>{\noindent \hspace{-.75 cm} \includegraphics[width=1.0\textwidth]{march-1.pdf}}
+\only<5>{\noindent \hspace{-.75 cm} \includegraphics[width=1.0\textwidth]{march.pdf}}
+\end{frame}
+
+
+\begin{frame}[plain]
+\frametitle{The Data Plane is continuously evolving}
+\begin{itemize}
+\item[]
+\item Each scheme wins in its own evaluation.
+\item[]
+\item Quest for a ``silver bullet'' in-network method.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{We disagree: There is no silver bullet!}
+\begin{itemize}
+\item{Different applications care about different objectives.}
+\item[]
+
+\item{Applications use different transport protocols.}
+\item[]
+
+\item{Networks are heterogeneous.}
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Our work:}
+\begin{itemize}
+\item{Quantify non-universality of in-network methods.}
+\item[]
+
+\item{Extend SDN to the Data Plane to handle in-network diversity.}
+\item[]
+
+\end{itemize}
+\end{frame}
+
+%%
+%%\begin{frame}[plain]
+%%\frametitle{Early symptoms}
+%%\begin{itemize}
+%%\item{Hard to configure wired AQM for wireless links}
+%%
+%%\item[]
+%%
+%%\item{Several distinct point solutions for datacenters}
+%%\begin{itemize}
+%%\item DCTCP, HULL, D3, DeTail, PDQ, pFabric
+%%\end{itemize}
+%%
+%%\item[]
+%%
+%%\item{No consensus on the ``right metric"}
+%%\begin{itemize}
+%%\item Minimizing missed deadlines
+%%\item Flow Completion Time
+%%\item Latency
+%%\item Throughput
+%%\item Tail Latency
+%%\item \dots 
+%%\end{itemize}
+%%
+%%\end{itemize}
+%%\end{frame}
+%%
+\begin{frame}[plain]
+\frametitle{Quantifying ``No Silver Bullet'': Network Configurations}
+\begin{table}
+\begin{tabular}{|p{0.34\linewidth}|p{0.65\linewidth}|}
+\hline
+{\bf \underline{Configuration}} & {\bf \underline{Description}} \\
+{\bf CoDel+FCFS} & One shared FCFS queue with CoDel\\
+& \\
+%\hline
+{\bf CoDel+FQ} & Per-flow fair queueing with CoDel on each queue (Nichols 2013)\\ 
+% TODO: Check if this is ok.
+&\\
+%\hline
+{\bf Bufferbloat+FQ} & Per-flow fair queueing with deep buffers on
+each queue\\ 
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Quantifying``No Silver Bullet'': Workloads and Objectives}
+
+\begin{table}
+\begin{tabular}{|p{0.22\linewidth}|p{0.33\linewidth}|p{0.38\linewidth}|}
+\hline
+{\bf \underline{Workload}} & {\bf \underline{Description}} & {\bf \underline{Objective}} \\
+\textbf{\emph{Bulk}} & Long-running bulk transfer flow & Max.~throughput \\
+& &\\
+\textbf{\emph{Web}} & Switched flow with ON/OFF periods &
+Min.~99.9~\%ile flow completion time \\
+& &\\
+\textbf{\emph{Interactive}} & Long-running \ \  interactive flow & Max.~$\frac{\mbox{throughput}}{\mbox{delay}}$ \\ 
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Quantifying ``No Silver Bullet''}
+\only<1>{ \noindent \begin{figure}[ht]\includegraphics[width=\columnwidth]{base.pdf}\end{figure}}
+\only<2>{ \noindent \begin{figure}[ht]\includegraphics[width=\columnwidth]{highlight.pdf}\end{figure}}
+\only<3>{ \noindent \begin{figure}[ht]\includegraphics[width=\columnwidth]{expt.pdf}\end{figure}}
+\only<4>{ \noindent \begin{figure}[ht]\includegraphics[width=\columnwidth]{cfq.pdf}\end{figure}}
+\only<5>{ \noindent \begin{figure}[ht]\includegraphics[width=\columnwidth]{bfq.pdf}\end{figure}}
+\only<6>{ \noindent \begin{figure}[ht]\includegraphics[width=\columnwidth]{victor.pdf}\end{figure}}
+\only<7>{ \noindent \begin{figure}[ht]\includegraphics[width=\columnwidth]{fig-5.pdf}\end{figure}}
+\only<8>{ \noindent \begin{figure}[ht]\includegraphics[width=\columnwidth]{fig-4.pdf}\end{figure}}
+\only<9>{ \noindent \begin{figure}[ht]\includegraphics[width=\columnwidth]{fig-3.pdf}\end{figure}}
+\only<10>{ \noindent \begin{figure}[ht]\includegraphics[width=\columnwidth]{fig-2.pdf}\end{figure}}
+\only<11>{ \noindent \begin{figure}[ht]\includegraphics[width=\columnwidth]{fig-1.pdf}\end{figure}}
+\only<12>{ \noindent \begin{figure}[ht]\includegraphics[width=\columnwidth]{fig.pdf}\end{figure}}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Why is no single data plane configuration the best?}
+\begin{itemize}
+\item Bufferbloat gives the best throughput on variable-rate links.
+\item[] 
+
+\item FCFS is preferable to Fair Queuing with homogeneous objectives.
+
+\item[]
+
+\item Fair Queuing is preferable with heterogeneous objectives.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{So what should the network designer do?}
+\begin{itemize}
+\item Don't strive for the best in-network behaviour.
+\item []
+\item Instead, architect for evolvability. 
+\item []
+\item Conceptually, extend SDN to include the data plane as well.
+%%\item Programmable queue management and scheduling
+%%\item Not just for selecting among pre-built choices, but to change
+%%  behavior in the field
+%%\item Because there is no silver bullet and innovation will continue!
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Flexibility without sacrificing performance}
+
+% Mention previous talk here.
+%(Or, why this isn't the same as ``active networks'')
+
+\begin{itemize}
+\item Provide interfaces only to the head and tail of queues
+\item[]
+\item Operators specify only queue-management/scheduling logic
+\item[]
+\item No access to packet payloads.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Building such a data plane in four parts}
+\begin{itemize}
+\item<1-> Hardware gadgets
+      \begin{itemize}
+      \item Random number generators (RED, BLUE)
+      \item Binary tree of comparators (pFabric, SRPT)
+      \item Look-up tables for function approximation (CoDel, RED)
+%      \item EWMA estimators (RED, AVQ, CSFQ)
+      \end{itemize}
+
+\item<2-> I/O interfaces
+      \begin{itemize}
+      \item Drop/mark head/tail of queue
+      \item Interrupts for enqueue/dequeue
+      \item Rewrite packet fields
+      \end{itemize}
+
+\item<3-> State maintenance
+      \begin{itemize}
+      \item Per-flow (WFQ, DRR)
+      \item Per-dst address (PF)
+%      \item For fastest flows alone (AFD)
+      \end{itemize}
+
+\item<4-> A domain-specific instruction set
+      \begin{itemize}
+      \item Expresses control flow
+      \item Implements new functions unavailable in hardware
+      \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Feasibility study: CoDel}
+\begin{center}
+\includegraphics[width=\columnwidth]{codel.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Synthesis numbers on the Xilinx Kintex-7}
+\begin{center}
+\begin{tabular}{p{0.32 \columnwidth} p{0.32 \columnwidth} p{0.32 \columnwidth}}
+\bf Resource & \bf Usage & \bf Fraction \\
+\hline Slice logic & 1,256 & 1\% \\
+Slice logic dist. & 1,975 & 2\% \\
+IO/GTX ports & 27 & 2\% \\
+DSP slices & 0 & 0\% \\
+%TODO: Fix this.
+Maximum speed & 12.9 million pkts/s \url{~}10 Gbps \\
+\end{tabular}
+\end{center}
+\begin{itemize}
+\item Small fraction of the FPGA's resources.
+\item Can be improved by pipelining or parallelizing.
+\end{itemize}
+\end{frame}
+
+%%\begin{frame}[plain]
+%%\frametitle{Limitations and Practical Considerations:}
+%%\begin{itemize}
+%%%\item Cannot express several network functions that need payloads.
+%%%\item[]
+%%\item Mechanism to signal application objectives.
+%%\item[]
+%%\item Feasibility at 10G on high port-density  switches.
+%%\item[]
+%%\item Energy, area, and performance costs of flexibility.
+%%\end{itemize}
+%%\end{frame}
+
+%%\begin{frame}[plain]
+%%\frametitle{Related Work}
+%%\begin{itemize}
+%%\item Active Networking, e.g., ANTS
+%%\item []
+%%\item Software Routers, e.g., Click
+%%\item []
+%%\item Software-Defined Networking, e.g., OpenFlow
+%%\end{itemize}
+%%\end{frame}
+
+\begin{frame}[plain]
+
+\frametitle{Conclusion}
+\begin{itemize}
+
+\item No silver bullet to in-network resource allocation.
+
+\item[]
+\item Algorithms will evolve: Data Plane should help
+
+\item[]
+\item Reproduce our results: \textcolor{DarkBlue}{http://web.mit.edu/anirudh/www/sdn-data-plane.html} 
+
+\end{itemize}
+\end{frame}
+
+
+%% Backup slides 
+
+\end{Large}
