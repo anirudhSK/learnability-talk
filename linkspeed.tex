@@ -1,5 +1,23 @@
 \begin{frame}
 \frametitle{The cost of generality, or forwards-compatibility}
+\begin{table}
+\begin{small}
+\begin{tabular}{l|l|l|l|l|l|}
+\bf Tao & \bf Link rates & \bf RTT & \bf Senders & ON/OFF time & Topology \\
+\hline
+1000x  & 1--1000~Mbps & 150~ms & 2  & 1 sec & Dumbbell\\
+100x   & 3.2--320~Mbps & 150~ms & 2 & 1 sec & Dumbbell\\
+10x    & 10--100~Mbps & 150~ms & 2 & 1 sec & Dumbbell \\
+2x     & 22--44~Mbps & 150~ms & 2 & 1 sec & Dumbbell \\
+\end{tabular}
+\end{small}
+\caption{Training scenarios for forwards-compatibility experiment}
+\label{table:oprange}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{The cost of generality, or forwards-compatibility}
 \begin{centering}
 
 \noindent \only<1>{\includegraphics[width=3.1 in]{oprange-1.pdf}}\only<2>{\includegraphics[width=3.1 in]{oprange-2.pdf}}\only<3>{\includegraphics[width=3.1 in]{oprange-3.pdf}}\only<4>{\includegraphics[width=3.1 in]{oprange-4.pdf}}\only<5>{\includegraphics[width=3.1 in]{oprange-5.pdf}}\only<6>{\includegraphics[width=3.1 in]{oprange-6.pdf}}\only<7>{\includegraphics[width=3.1 in]{oprange-all.pdf}}
