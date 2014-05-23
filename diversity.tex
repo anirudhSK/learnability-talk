@@ -1,8 +1,14 @@
 \begin{frame}
 \frametitle{Can applications with different objectives coexist?}
 \begin{itemize}
-\item Tpt. Sender: A throughput-intensive sender ($\delta=0.1$)
-\item Lat. Sender: A latency-sensitive sender ($\delta=10.0$)
+\item Tpt. Sender: A throughput-intensive sender
+\begin{equation}
+log(throughput) - 0.1 * log(delay)
+\end{equation}
+\item Lat. Sender: A latency-sensitive sender
+\begin{equation}
+log(throughput) - 10.0 * log(delay)
+\end{equation}
 \item Running over a FIFO queue
 \end{itemize}
 \end{frame}

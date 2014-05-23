@@ -31,11 +31,11 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{But, the model is always wrong ...}
+\frametitle{But, the model is always wrong!}
 \begin{itemize}
 \item Lost throughput due to stochastic loss 
 \item Bufferbloat when queues are incorrectly sized
-\item Diminished fairness and unpredictability in small-packet regimes
+\item Diminished fairness in small-packet regimes
 \item Incast in datacenters
 \end{itemize}
 \end{frame}
@@ -44,7 +44,7 @@
 \frametitle{Our work}
 \begin{itemize}
 \item Can we formalize this design process?
-\item Quantify consequences of model mismatch
+\item Quantify the consequences of model mismatch?
 \end{itemize}
 \end{frame}
 
@@ -58,29 +58,44 @@
 \item Application workload
 \item Buffer size and queuing discipline 
 \end{itemize}
-\item Specify an \textit{objective function}
-\item Synthesize a protocol using an automated protocol-synthesis tool, Remy~\cite{remy}
+\item Specify an \textit{objective function}.
+\item Synthesize protocol automatically.
 \item Evaluate on a \textit{testing scenario} inside ns-2
-\item Difference between training and testing scenario represents model imperfection
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Automated protocol synthesis}
 \begin{itemize}
-\item Find best protocol for an imperfect network model.
-\item Problem is NEXP-complete. 
-\item Rely on Remy to produce Tractable Attempts at Optimal (TAO) congestion-control protocols.
+\item Find best protocol, given an imperfect network model.
+\item Unfortunately, problem is NEXP-complete. 
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Tractable Attempts at Optimal}
 \begin{itemize}
-\item Just how suboptimal are these TAO protocols?
-\item  
-\item
+\item Rely on Remy~\cite{remy} to produce Tractable Attempts at Optimal (TAO) congestion-control protocols.
+\item Approaches upper bounds on throughput and lower bounds on delay.
 \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{How far off is Remy from the optimal?}
+\begin{itemize}
+\item Training scenario:
+\begin{tabular}{ll}
+Link speed & 32 Mbits/sec \\
+minimum RTT & 150 ms \\
+Topology & Dumbbell \\
+Number of senders & 2 \\
+Workload & Exponential ON/OFF times (mean 1 sec) \\
+Buffer size & 5 BDP \\
+Objective function & $\sum$ log(throughput) - log(delay)
+\end{tabular}
+\item Testing scenario identical to training scenario
+\end{itemize}
+
 \end{frame}
 
 \input optimality
@@ -96,7 +111,7 @@
 \begin{frame}
 \frametitle{Related Work}
 \begin{itemize}
-\item Probably-approximately correct learning
+\item Probably approximately correct learning
 \item Transfer learning
 \item Machine-generated congestion control
 \end{itemize}
@@ -105,10 +120,10 @@
 \begin{frame}
 \frametitle{Limitations and future work}
 \begin{itemize}
-\item Better characterization of optimal protocols
-\item Extending protocol-generation to in-network algorithms as well.
-\item Characterize model imperfections between simulation and the real world.
-\item Why are the results the way they are?
+\item Generalizability to more complex topologies?
+\item Better characterization of gap from optimal
+\item Do results change if we learn in-network behavior as well?
+\item Model mismatches between simulation and the real world
 \end{itemize}
 \end{frame}
 \end{Large}
