@@ -26,17 +26,17 @@
 \item Formulate a mental model of the target network and application workload
 \item Decide on the protocol's goal
 \item Design a protocol to achieve this goal on the target network
-\item Model and goal can either be implicit or explicit
+\item Can either be implicit or explicit
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{But, the model is always wrong ...}
 \begin{itemize}
+\item Lost throughput due to stochastic loss 
 \item Bufferbloat when queues are incorrectly sized
 \item Diminished fairness and unpredictability in small-packet regimes
 \item Incast in datacenters
-\item Lost throughput under stochastic loss 
 \end{itemize}
 \end{frame}
 
@@ -83,6 +83,8 @@
 \end{itemize}
 \end{frame}
 
+\input optimality
+
 \input linkspeed
 
 \begin{frame}
@@ -97,6 +99,7 @@
 
 \input compatibility
 
+\input diversity
 \begin{frame}
 \frametitle{Coping with diverse application requirements}
 
