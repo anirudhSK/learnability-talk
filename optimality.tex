@@ -1,4 +1,29 @@
 \begin{frame}
+\frametitle{Tractable Attempts at Optimal}
+\begin{itemize}
+\item Rely on Remy~\cite{remy} to produce Tractable Attempts at Optimal (TAO) congestion-control protocols.
+\item Approaches upper bounds on throughput and lower bounds on delay.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{How far off is Remy from the optimal?}
+\begin{itemize}
+\item Training scenario:
+\begin{tabular}{ll}
+Link speed & 32 Mbits/sec \\
+minimum RTT & 150 ms \\
+Topology & Dumbbell \\
+Number of senders & 2 \\
+Workload & 1 sec ON/OFF times \\
+Buffer size & 5 BDP \\
+Objective function & $\sum$ log(throughput) - log(delay)
+\end{tabular}
+\item Testing scenario identical to training scenario
+\end{itemize}
+\end{frame}
+
+\begin{frame}
 \frametitle{How far off is Remy from the optimal?}
 \begin{centering}
 
