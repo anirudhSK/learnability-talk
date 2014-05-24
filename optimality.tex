@@ -1,18 +1,10 @@
 \begin{frame}
-\frametitle{Tractable Attempts at Optimal}
-\begin{itemize}
-\item Rely on Remy~\cite{remy} to produce Tractable Attempts at Optimal (TAO) congestion-control protocols.
-\item Approaches upper bounds on throughput and lower bounds on delay.
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{How far off is Remy from the optimal?}
+\frametitle{Is using Remy reasonable?}
 \begin{itemize}
 \item Training scenario:
 \begin{tabular}{ll}
 Link speed & 32 Mbits/sec \\
-minimum RTT & 150 ms \\
+Minimum RTT & 150 ms \\
 Topology & Dumbbell \\
 Number of senders & 2 \\
 Workload & 1 sec ON/OFF times \\
@@ -24,7 +16,19 @@ Objective function & $\sum$ log(throughput) - log(delay)
 \end{frame}
 
 \begin{frame}
-\frametitle{How far off is Remy from the optimal?}
+\frametitle{Is using Remy reasonable?}
+\begin{itemize}
+\item A hypothetical centralized scheme (CEN)
+\begin{itemize}
+\item Every time a sender turns ON/OFF, solve $\sum$ log (throughput)
+\item Set each sender's rate using obtained solution
+\item Zero queuing delay
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Is using Remy reasonable?}
 \begin{centering}
 
 \noindent \only<1>{\includegraphics[width=3.3 in]{optimality-baseline.pdf}}\only<2>{\includegraphics[width=3.3 in]{optimality-upper.pdf}}\only<3>{\includegraphics[width=3.3 in]{optimality-tao.pdf}}\only<4>{\includegraphics[width=3.3 in]{optimality-codel.pdf}}\only<5>{\includegraphics[width=3.3 in]{optimality-cubic.pdf}}
