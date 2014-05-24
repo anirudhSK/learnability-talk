@@ -35,7 +35,6 @@
 \begin{itemize}
 \item Lost throughput due to stochastic loss 
 \item Bufferbloat when queues are incorrectly sized
-\item Diminished fairness in small-packet regimes
 \item Incast in datacenters
 \end{itemize}
 \end{frame}
@@ -45,6 +44,19 @@
 \begin{itemize}
 \item Can we formalize this design process?
 \item Quantify the consequences of model mismatch?
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Contributions}
+\begin{itemize}
+\item Formalize learnability in the context of congestion control.
+\item Use it to answer:
+\begin{itemize}
+\item Do we need to know the link speed exactly?
+\item What is the cost of backwards compatibility?
+\item Do we need to know the topology exactly?
+\end{itemize}
 \end{itemize}
 \end{frame}
 
@@ -67,12 +79,15 @@
 \begin{frame}
 \frametitle{Automated protocol synthesis}
 \begin{itemize}
-\item Find best protocol, given an imperfect network model.
-\item Unfortunately, problem is NEXP-complete. 
+\item Find best protocol, given an imperfect network model
+\item The problem is hard to solve in general
+\item Rely on Remy~\cite{remy} to produce congestion-control protocols.
 \end{itemize}
 \end{frame}
 
 \input optimality
+
+\input caveats
 
 \input linkspeed
 
