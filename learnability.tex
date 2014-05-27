@@ -24,19 +24,18 @@
 \begin{frame}
 \frametitle{Designing congestion-control protocols today}
 \begin{itemize}
-\item<2-> Formulate a mental model of the target network
-\item<3-> Decide on the protocol's goal
-\item<4-> Design a protocol to achieve this goal
-\item<5-> Can either be implicit or explicit
+\item<2-> Set of rules for the end points to follow
+\item<3-> Implicitly assume certain network conditions
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{But, the model is always wrong!}
+\frametitle{Assumptions may break with time}
 \begin{itemize}
 \item Lost throughput due to stochastic loss 
 \item Bufferbloat when queues are incorrectly sized
 \item Incast in datacenters
+\item<2-> What assumptions matter and what don't?
 \end{itemize}
 \end{frame}
 
@@ -44,7 +43,8 @@
 \frametitle{Our work}
 \begin{itemize}
 \item<1-> Can we formalize this design process ...
-\item<2-> and quantify the consequences of model mismatch?
+\item<2-> to quantify: how easy is it to “learn” a network protocol to achieve desired goals, given
+an imperfect model of the network?
 \end{itemize}
 \end{frame}
 
@@ -78,7 +78,7 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Automated protocol synthesis}
+\frametitle{Formalizing the design process}
 \begin{itemize}
 \item Find best protocol, given an imperfect network model
 \item The problem is hard to solve in general
