@@ -3,12 +3,12 @@
 \begin{table}
 \begin{center}
 \begin{tiny}
-\begin{tabular}{l|l|l|l|l|l}
-\bf RemyCC & \bf Link rates & \bf RTT & \bf Senders & ON/OFF time & Topology \\
+\begin{tabular}{l|l|l|l|l|l|l|}
+\bf RemyCC & \bf Link rates & \bf RTT & \bf Senders & ON/OFF time & Topology & Buffer \\
 \hline
-TCP-aware  & 9--11~Mbps & 100~ms & \pbox{2.5cm}{2 Remy \\ 1 Remy, 1 AIMD}  & \pbox{2.5cm}{5 sec ON/OFF \\ 5 sec ON, 10 ms OFF} & Dumbbell\\
+TCP-aware  & 9--11~Mbps & 100~ms & \pbox{2.5cm}{2 Remy \\ 1 Remy, 1 AIMD}  & \pbox{2.5cm}{5 sec ON/OFF \\ 5 sec ON, 10 ms OFF} & Dumbbell & 2 BDP\\
 \hline
-TCP-naive  & 9--11~Mbps & 100~ms & 2 Remy  & \pbox{2.5cm}{5 sec ON/OFF \\ 5 sec ON, 10 ms OFF} & Dumbbell\\
+TCP-naive  & 9--11~Mbps & 100~ms & 2 Remy  & \pbox{2.5cm}{5 sec ON/OFF \\ 5 sec ON, 10 ms OFF} & Dumbbell & 2 BDP\\
 \hline
 \end{tabular}
 \end{tiny}
@@ -16,18 +16,18 @@ TCP-naive  & 9--11~Mbps & 100~ms & 2 Remy  & \pbox{2.5cm}{5 sec ON/OFF \\ 5 sec 
 \label{table:oprange}
 \end{center}
 \end{table}
-
+% TODO: Mention 0.1 times delay. Prferring throughput.
 \begin{table}
 \begin{center}
 \begin{tiny}
-\begin{tabular}{l|l|l|l|l}
-\bf Link rates & \bf RTT & \bf Senders & ON/OFF time & Topology \\
+\begin{tabular}{l|l|l|l|l|l|}
+\bf Link rates & \bf RTT & \bf Senders & ON/OFF time & Topology & Buffer \\
 \hline
-10~Mbps & 100~ms & 2 TCP-aware & 5 sec ON, 10 ms OFF & Dumbbell\\
-10~Mbps & 100~ms & 2 TCP-naive & 5 sec ON, 10 ms OFF & Dumbbell\\
-10~Mbps & 100~ms & TCP-aware, AIMD & 5 sec ON, 10 ms OFF & Dumbbell\\
-10~Mbps & 100~ms & TCP-naive, AIMD & 5 sec ON, 10 ms OFF & Dumbbell\\
-10~Mbps & 100~ms & 2 AIMD  & 5 sec ON, 10 ms OFF & Dumbbell\\
+10~Mbps & 100~ms & 2 TCP-aware & 5 sec ON, 10 ms OFF & Dumbbell & 2 BDP\\
+10~Mbps & 100~ms & 2 TCP-naive & 5 sec ON, 10 ms OFF & Dumbbell & 2 BDP\\
+10~Mbps & 100~ms & TCP-aware, AIMD & 5 sec ON, 10 ms OFF & Dumbbell & 2 BDP\\
+10~Mbps & 100~ms & TCP-naive, AIMD & 5 sec ON, 10 ms OFF & Dumbbell & 2 BDP\\
+10~Mbps & 100~ms & 2 AIMD  & 5 sec ON, 10 ms OFF & Dumbbell & 2 BDP\\
 \end{tabular}
 \end{tiny}
 \caption{Testing scenarios}
