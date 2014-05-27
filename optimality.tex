@@ -9,7 +9,7 @@ Topology & Dumbbell \\
 Senders & 2 \\
 Workload & 1 sec ON/OFF times \\
 Buffer size & 5 BDP \\
-Objective & \pbox{0.7\textwidth}{$\sum log(tpt) - log(delay)$ \\ (proportionally fair $\frac{tpt}{delay}$)}
+Objective & $\sum log(tpt) - log(delay)$
 \end{tabular}
 \end{itemize}
 \end{frame}
@@ -22,7 +22,6 @@ Objective & \pbox{0.7\textwidth}{$\sum log(tpt) - log(delay)$ \\ (proportionally
       \begin{equation*}
       max. \sum log (tpt)
       \end{equation*}
-      (Proportionally fair throughput allocations)
 \item Set each sender's rate using obtained solution
 \item Zero queuing delay
 \end{itemize}
