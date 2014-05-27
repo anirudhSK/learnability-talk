@@ -9,7 +9,7 @@ Topology & Dumbbell \\
 Number of senders & 2 \\
 Workload & 1 sec ON/OFF times \\
 Buffer size & 5 BDP \\
-Objective function & $\sum$ log(throughput) - log(delay)
+Objective function & $\sum log(tpt) - log(delay)$
 \end{tabular}
 \item Testing scenario identical to training scenario
 \end{itemize}
@@ -18,8 +18,12 @@ Objective function & $\sum$ log(throughput) - log(delay)
 \begin{frame}
 \frametitle{The omniscient protocol}
 \begin{itemize}
-\item Protocol knows topology, number of senders/receivers  
-\item Every time a sender turns ON/OFF, maximize \\ $\sum$ log (throughput), subject to capacity constraints
+\item Protocol knows topology, number, location of senders/receivers  
+\item Every time a sender turns ON/OFF,
+      \begin{equation*}
+      max. \sum log (tpt)
+      \end{equation*}
+      (Proportionally fair throughput allocations)
 \item Set each sender's rate using obtained solution
 \item Zero queuing delay
 \end{itemize}
