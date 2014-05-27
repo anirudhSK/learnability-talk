@@ -1,17 +1,16 @@
 \begin{frame}
 \frametitle{Remy compared with an omniscient protocol}
 \begin{itemize}
-\item Training scenario:
-\begin{tabular}{ll}
+\item Training/testing scenario:
+\begin{tabular}{p{0.3\textwidth}p{0.7\textwidth}}
 Link speed & 32 Mbits/sec \\
 Minimum RTT & 150 ms \\
 Topology & Dumbbell \\
-Number of senders & 2 \\
+Senders & 2 \\
 Workload & 1 sec ON/OFF times \\
 Buffer size & 5 BDP \\
-Objective function & $\sum log(tpt) - log(delay)$
+Objective & \pbox{0.7\textwidth}{$\sum log(tpt) - log(delay)$ \\ (proportionally fair $\frac{tpt}{delay}$)}
 \end{tabular}
-\item Testing scenario identical to training scenario
 \end{itemize}
 \end{frame}
 
