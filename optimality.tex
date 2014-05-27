@@ -1,5 +1,5 @@
 \begin{frame}
-\frametitle{Is using Remy reasonable?}
+\frametitle{Remy compared with an omniscient protocol}
 \begin{itemize}
 \item Training scenario:
 \begin{tabular}{ll}
@@ -16,11 +16,10 @@ Objective function & $\sum$ log(throughput) - log(delay)
 \end{frame}
 
 \begin{frame}
-\frametitle{Is using Remy reasonable?}
+\frametitle{The omniscient protocol}
 \begin{itemize}
-\item A hypothetical centralized scheme (CEN)
-\begin{itemize}
-\item Every time a sender turns ON/OFF, solve $\sum$ log (throughput)
+\item Protocol knows topology, number of senders/receivers  
+\item Every time a sender turns ON/OFF, maximize \\ $\sum$ log (throughput), subject to capacity constraints
 \item Set each sender's rate using obtained solution
 \item Zero queuing delay
 \end{itemize}
@@ -28,10 +27,10 @@ Objective function & $\sum$ log(throughput) - log(delay)
 \end{frame}
 
 \begin{frame}
-\frametitle{Is using Remy reasonable?}
+\frametitle{Remy approaches omniscient protocol}
 \begin{centering}
 
-\noindent \only<1>{\includegraphics[width=3.3 in]{optimality-base.pdf}}\only<2>{\includegraphics[width=3.3 in]{optimality-runs.pdf}}\only<3>{\includegraphics[width=3.3 in]{optimality-median.pdf}}\only<4>{\includegraphics[width=3.3 in]{optimality-cubic.pdf}}\only<5>{\includegraphics[width=3.3 in]{optimality-codel.pdf}}\only<6>{\includegraphics[width=3.3 in]{optimality-cen.pdf}}\only<7>{\includegraphics[width=3.3 in]{optimality-remy.pdf}}
+\noindent \only<1>{\includegraphics[width=3.3 in]{optimality-base.pdf}}\only<2>{\includegraphics[width=3.3 in]{optimality-runs.pdf}}\only<3>{\includegraphics[width=3.3 in]{optimality-median.pdf}}\only<4>{\includegraphics[width=3.3 in]{optimality-cubic.pdf}}\only<5>{\includegraphics[width=3.3 in]{optimality-omni.pdf}}\only<6>{\includegraphics[width=3.3 in]{optimality-codel.pdf}}\only<7>{\includegraphics[width=3.3 in]{optimality-remy.pdf}}
 
 \end{centering}
 \end{frame}
