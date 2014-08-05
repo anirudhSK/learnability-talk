@@ -20,12 +20,12 @@
 
 \begin{frame}
 \frametitle{The Remy protocol synthesis procedure}
-\begin{itemize}
-\item Start off with a constant lookup table: same action regardless of state
-\item Optimize each current action to maximize objective
-\item Bisect lookup table on every state axis retaining the same action
-\item Repeat till you converge
-\end{itemize}
+\begin{enumerate}
+\item Start off with one action for all states
+\item Optimize each action to maximize objective
+\item Bisect lookup table on every state axis
+\item Repeat 2 and 3 till you converge
+\end{enumerate}
 \end{frame}
 
 \begin{frame}
