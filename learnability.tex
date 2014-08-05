@@ -88,25 +88,9 @@ an imperfect set of assumptions: the network model?
 \end{itemize}
 \end{frame}
 
-\begin{frame}
-\frametitle{TODO: Make succinct: The protocol synthesis procedure}
-\begin{itemize}
-\item Represent protocol as a range-based lookup table from \textit{state} to \textit{action}
-\item State: Designer-specified congestion signals
-\item Action: increasing/decreasing window or a new transmission rate
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{TODO The protocol synthesis procedure: snarf Keith's figures from SIGCOMM 2013}
-\begin{itemize}
-\item Start off with a constant function: same action regardless of state
-\item Optimize this action to maximize objective
-\item Bisect lookup table based on state usage retaining the same action
-\end{itemize}
-\end{frame}
-
 \input caveats
+
+\input remy
 
 \input optimality
 
@@ -115,8 +99,6 @@ an imperfect set of assumptions: the network model?
 \input multiplexing
 
 \input compatibility
-
-
 
 \begin{frame}
 \frametitle{Related Work}
