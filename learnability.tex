@@ -24,39 +24,41 @@
 \begin{frame}
 \frametitle{Congestion-control protocols today}
 \begin{itemize}
-\item<2-> Set of rules for the end points to follow
-\item<3-> Implicitly assume certain network conditions
+\item<2-> Set of human-designed rules at end points (and switches)
+\item<3-> Protocols implicitly assume certain network conditions
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Assumptions may break with time}
+\frametitle{Assumptions break with time (figure out how to tie these better to the questions we do answer)}
 \begin{itemize}
 \item Lost throughput due to stochastic loss 
 \item Bufferbloat when queues are incorrectly sized
 \item Incast in datacenters
-\item<2-> What assumptions matter and what don't?
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Our work}
 \begin{itemize}
-\item<1-> Can we formalize this design process ...
-\item<2-> to quantify: how easy is it to “learn” a network protocol to achieve desired goals, given
-an imperfect model of the network?
+\item<1-> What assumptions matter and what don't?
+\item<2-> Can we formalize this design process ...
+\item<3-> to quantify: how easy is it to “learn” a network protocol to achieve desired goals, given
+an imperfect set of assumptions (model) of the network?
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Contributions}
+\frametitle{Outline}
 \begin{itemize}
 \item Formalize learnability in the context of congestion control
 \item Use it to answer:
 \begin{itemize}
 \item Do we need to know the link speed exactly?
+\item Do we need to know the degree of multiplexing exactly?
 \item What is the cost of backwards compatibility?
 \item Do we need to know the topology exactly?
+\item What is the cost of coexistence of applications with differing goals?
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -64,7 +66,7 @@ an imperfect model of the network?
 \begin{frame}
 \frametitle{Approach}
 \begin{itemize}
-\item Specify a \textit{training scenario}
+\item Specify \textit{training scenarios}
 \begin{itemize}
 \item Topology
 \item Locations of senders and receivers
@@ -73,7 +75,7 @@ an imperfect model of the network?
 \end{itemize}
 \item Specify an \textit{objective function}
 \item Synthesize protocol automatically
-\item Evaluate on a \textit{testing scenario} inside ns-2
+\item Evaluate on \textit{testing scenarios} inside ns-2
 \end{itemize}
 \end{frame}
 
@@ -86,11 +88,31 @@ an imperfect model of the network?
 \end{itemize}
 \end{frame}
 
+\begin{frame}
+\frametitle{TODO: Make succinct: The protocol synthesis procedure}
+\begin{itemize}
+\item Represent protocol as a range-based lookup table from \textit{state} to \textit{action}
+\item State: Designer-specified congestion signals
+\item Action: increasing/decreasing window or a new transmission rate
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{TODO The protocol synthesis procedure: snarf Keith's figures from SIGCOMM 2013}
+\begin{itemize}
+\item Start off with a constant function: same action regardless of state
+\item Optimize this action to maximize objective
+\item Bisect lookup table based on state usage retaining the same action
+\end{itemize}
+\end{frame}
+
 \input caveats
 
 \input optimality
 
 \input linkspeed
+
+\input multiplexing
 
 \input compatibility
 
@@ -109,7 +131,6 @@ an imperfect model of the network?
 \begin{frame}
 \frametitle{Limitations and future work}
 \begin{itemize}
-\item Generality on delay, multiplexing axis
 \item More complex topologies
 \item Do results change if we learn in-network behavior as well?
 \item Implement at Google (Summer 2014)
