@@ -26,8 +26,9 @@
 \begin{frame}
 \frametitle{Congestion-control protocols today}
 \begin{itemize}
-\item<2-> Set of human-designed rules at end points (and switches)
-\item<3-> Protocols implicitly assume certain network conditions
+\item<2-> Set of rules at hosts (and switches)
+\item<3-> Implicitly assume certain network conditions
+\item<4-> Implicit performance goals
 \end{itemize}
 \end{frame}
 
@@ -45,8 +46,8 @@
 \begin{itemize}
 \item<1-> What assumptions matter and what don't?
 \item<2-> Can we formalize this design process ...
-\item<3-> to quantify: how easy is it to “learn” a network protocol to achieve desired goals, given
-an imperfect set of assumptions: the network model?
+\item<3-> ... to quantify: how easy is it to “learn” a network protocol to achieve desired goals, given
+an imperfect set of assumptions, i.e., the network model?
 \end{itemize}
 \end{frame}
 
@@ -56,8 +57,8 @@ an imperfect set of assumptions: the network model?
 \item Formalize learnability in the context of congestion control
 \item Use it to answer:
 \begin{itemize}
-\item Do we need to know the link speed exactly?
-\item Do we need to know the degree of multiplexing exactly?
+\item Do we need to know the exact link speed?
+\item Do we need to know the exact degree of multiplexing?
 \item What is the cost of backwards compatibility?
 %\item Do we need to know the topology exactly?
 %\item What is the cost of application diversity?
