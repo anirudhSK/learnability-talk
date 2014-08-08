@@ -24,82 +24,34 @@
 
 \begin{Large}
 \begin{frame}
-\frametitle{Congestion-control protocols today}
+\frametitle{Computer-generated congestion control (Winstein et al 2013)}
 \begin{itemize}
-\item<2-> Set of rules at hosts (and switches)
-\item<3-> Implicitly assume certain network conditions
-\item<4-> Implicit performance goals
+\item A model of the network
+\item Objective function
+\item Protocol
+\item TODO: Make this a figure
 \end{itemize}
 \end{frame}
-
-\begin{frame}
-\frametitle{Assumptions break with time}
-\begin{itemize}
-\item Lost throughput due to stochastic loss 
-\item Bufferbloat when queues are incorrectly sized
-\item Incast in datacenters
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Our work}
-\begin{itemize}
-\item<1-> What assumptions matter and what don't?
-\item<2-> Can we make goals and assumptions explicit ...
-\item<3-> ... to quantify: how easy is it to “learn” a network protocol to achieve desired goals, given
-an imperfect set of assumptions, i.e., the network model?
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Outline}
-\begin{itemize}
-\item Formalize learnability in the context of congestion control
-\item Use it to answer:
-\begin{itemize}
-\item Do we need to know the exact link speed?
-\item Do we need to know the exact degree of multiplexing?
-\item What is the cost of backwards compatibility?
-%\item Do we need to know the topology exactly?
-%\item What is the cost of application diversity?
-\end{itemize}
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Approach}
-\begin{itemize}
-\item Specify \textit{training scenarios}
-\begin{itemize}
-\item Topology
-\item Locations of senders and receivers
-\item Application workload
-\item Buffer size and queuing discipline 
-\end{itemize}
-\item Specify an \textit{objective function}
-\item Synthesize protocol automatically
-\item Evaluate on \textit{testing scenarios} inside ns-2
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Formalizing the design process}
-\begin{itemize}
-\item Find best protocol, given an imperfect network model
-\item The problem is hard to solve in general
-\item<2-> Compromise: Rely on Remy\footnote<2->{Keith Winstein and Hari Balakrishnan, \textbf{TCP ex Machina: Computer-Generated Congestion Control}, \textit{SIGCOMM 2013}} instead
-\end{itemize}
-\end{frame}
-
-\input caveats
-
-\input remy
 
 \input optimality
+
+\begin{frame}
+\begin{itemize}
+\frametitle{What if the model is imperfect?}
+\item TODO: Bring up Remy figure again but distinguish training and testing models.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+ how easy is it to “learn” a network protocol to achieve desired goals, given
+an imperfect set of assumptions, i.e., the network model?
+\end{frame}
 
 \input linkspeed
 
 \input multiplexing
+
+\input topology 
 
 \input compatibility
 
@@ -136,6 +88,6 @@ an imperfect set of assumptions, i.e., the network model?
 \begin{frame}
 \frametitle{Backup slides}
 \end{frame}
-\input topology
+\input remy
 \input diversity
 \end{document}
