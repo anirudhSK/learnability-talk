@@ -3,7 +3,7 @@ import math
 import numpy as np
 from matplotlib import pyplot as plt
 
-fnames = {"rtt140--160.plot":("140 - 160 ms",'fig.text(0.7, 0.685, "140 - 160 ms", fontsize=20, rotation=-14, color="goldenrod")'),
+fnames = {"rtt140--160.plot":("140 - 160 ms",'fig.text(0.7, 0.685, "140 - 160 ms", fontsize=20, rotation=-14, color=all_colors["140 - 160 ms"])'),
           "rtt145--155.plot":("145 - 155 ms",'fig.text(0.7, 0.75, "145 - 155 ms", fontsize=20, rotation=-10, color=all_colors["145 - 155 ms"])'),
           "rtt50--250.plot":("50 - 250 ms",'fig.text(0.7, 0.8, "50 - 250 ms", fontsize=20, rotation=-5, color=all_colors["50 - 250 ms"])'),
           "rtt150.plot":("150 ms exactly",'fig.text(0.22, 0.62, "150 ms exactly", fontsize=20, rotation=68, color=all_colors["150 ms exactly"])'),
@@ -15,7 +15,7 @@ order=['Cubic', 'Cubic-over-sfqCoDel', '150 ms exactly', '145 - 155 ms', '140 - 
 
 all_data = {}
 all_colors = {}
-colors = plt.get_cmap('Dark2')(np.linspace(0, 1.0, 6))
+colors = plt.get_cmap('Dark2')(np.linspace(0, 1.0, 7))
 
 for datafile, (name, command) in fnames.iteritems():
     with open(datafile, "rb") as f:
@@ -45,7 +45,7 @@ for j, title in enumerate(order):
     yvals = [normalize(float(d[2]), float(d[1]), i+1) for i, d in enumerate(data)]
     xvals = [float(d[0]) * 2 for d in data]
     color = colors[j]
-    ar = plt.plot(xvals, yvals, label=title, color=color)
+    ar = plt.plot(xvals, yvals, label=title, color=color, lw=3)
     artists.append(ar[0])
     all_colors[title] = color
     
