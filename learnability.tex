@@ -24,82 +24,45 @@
 
 \begin{Large}
 \begin{frame}
-\frametitle{Congestion-control protocols today}
+\frametitle{Protocol design in practice}
 \begin{itemize}
-\item<2-> Set of rules at hosts (and switches)
-\item<3-> Implicitly assume certain network conditions
-\item<4-> Implicit performance goals
+\item<1-> Implicitly assume certain network conditions
+\item<2-> Implicit performance goals
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Assumptions break with time}
+\frametitle{But, assumptions are always wrong}
 \begin{itemize}
-\item Lost throughput due to stochastic loss 
-\item Bufferbloat when queues are incorrectly sized
-\item Incast in datacenters
+\item<1-> Stochastic loss in wireless networks
+\item<2-> Bufferbloat in cellular networks
+\item<3-> Incast in datacenter networks
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Our work}
-\begin{itemize}
-\item<1-> What assumptions matter and what don't?
-\item<2-> Can we make goals and assumptions explicit ...
-\item<3-> ... to quantify: how easy is it to “learn” a network protocol to achieve desired goals, given
-an imperfect set of assumptions, i.e., the network model?
-\end{itemize}
+\begin{center}
+How easy is it to “learn” a network protocol to achieve desired goals, given
+an imperfect set of assumptions?
+\end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Outline}
+%TODO: Can throw in figure here per D. Wetherall.
+\frametitle{Mechanizing protocol design}
 \begin{itemize}
-\item Formalize learnability in the context of congestion control
-\item Use it to answer:
-\begin{itemize}
-\item Do we need to know the exact link speed?
-\item Do we need to know the exact degree of multiplexing?
-\item What is the cost of backwards compatibility?
-%\item Do we need to know the topology exactly?
-%\item What is the cost of application diversity?
-\end{itemize}
+\item <1->Supply training networks to automated protocol synthesis tool (Remy, SIGCOMM 2013) 
+\item <2->Evaluate synthesized protocol on test networks
 \end{itemize}
 \end{frame}
-
-\begin{frame}
-\frametitle{Approach}
-\begin{itemize}
-\item Specify \textit{training scenarios}
-\begin{itemize}
-\item Topology
-\item Locations of senders and receivers
-\item Application workload
-\item Buffer size and queuing discipline 
-\end{itemize}
-\item Specify an \textit{objective function}
-\item Synthesize protocol automatically
-\item Evaluate on \textit{testing scenarios} inside ns-2
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Formalizing the design process}
-\begin{itemize}
-\item Find best protocol, given an imperfect network model
-\item The problem is hard to solve in general
-\item<2-> Compromise: Rely on Remy\footnote<2->{Keith Winstein and Hari Balakrishnan, \textbf{TCP ex Machina: Computer-Generated Congestion Control}, \textit{SIGCOMM 2013}} instead
-\end{itemize}
-\end{frame}
-
-\input caveats
-
-\input remy
 
 \input optimality
 
 \input linkspeed
 
 \input multiplexing
+
+\input topology 
 
 \input compatibility
 
@@ -113,11 +76,29 @@ an imperfect set of assumptions, i.e., the network model?
 \end{frame}
 
 \begin{frame}
-\frametitle{Ongoing and future work}
+\frametitle{Summary of findings}
 \begin{itemize}
-\item<1-> What does automated protocol synthesis teach us about protocol design?
-\item<2-> Model mismatch between optimizer/simulator and reality
-\item<3-> Automated synthesis of congestion control for the datacenter
+\item<1-> Possible to design for 1000x link speed range
+\item<2-> Simplifying topology doesn't hurt performance
+\item<3-> TCP compatibility is a double-edged sword 
+\item<4-> Tension between low and high degrees of multiplexing
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Limitations}
+\begin{itemize}
+\item<1-> Very simple experiments
+\item<2-> Results could change with better protocol-synthesis tools
+\item<3-> Do not model real-world imperfections
+\end{itemize}
+\end{frame}
+\begin{frame}
+
+\frametitle{Ongoing work}
+\begin{itemize}
+\item<1-> Automated synthesis of datacenter congestion control
+\item<2-> Automated synthesis of wide-area congestion control
 \end{itemize}
 \end{frame}
 
@@ -125,9 +106,9 @@ an imperfect set of assumptions, i.e., the network model?
 \frametitle{Conclusion and outlook}
 \begin{itemize}
 \item<1-> Application needs and network conditions evolve ...
-\item<2-> ... so we design new transport mechanisms.
+\item<2-> ... requiruing us to design new transport protocols.
 \item<3-> How hard is it to automate this process like other disciplines have done?
-\item<4-> Paper available at: http://web.mit.edu/anirudh/www/learnability-sigcomm2014.pdf
+%\item<4-> Paper available at: http://web.mit.edu/anirudh/www/learnability-sigcomm2014.pdf
 \end{itemize}
 \end{frame}
 
@@ -136,6 +117,11 @@ an imperfect set of assumptions, i.e., the network model?
 \begin{frame}
 \frametitle{Backup slides}
 \end{frame}
+\input caveats
+
+\input remy
+
+
 \input topology
 \input diversity
 \end{document}
