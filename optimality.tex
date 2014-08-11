@@ -1,4 +1,33 @@
 \begin{frame}
+\frametitle{Remy on a simple scenario}
+\begin{itemize}
+\item Training/testing scenario:
+\begin{tabular}{p{0.3\textwidth}p{0.7\textwidth}}
+Link speed & 32 Mbits/sec \\
+Minimum RTT & 150 ms \\
+Topology & Dumbbell \\
+Senders & 2 \\
+Workload & 1 sec ON/OFF times \\
+Buffer size & 5 BDP \\
+Objective & $\sum log(tpt) - log(delay)$
+\end{tabular}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{The omniscient protocol}
+\begin{itemize}
+\item Protocol knows topology, number, location of senders/receivers  
+\item Every time a sender turns ON/OFF,
+      \begin{equation*}
+      max. \sum log (tpt)
+      \end{equation*}
+\item Set each sender's rate using obtained solution
+\item Zero queuing delay
+\end{itemize}
+\end{frame}
+
+\begin{frame}
 \frametitle{Remy approaches omniscient protocol}
 \begin{centering}
 
