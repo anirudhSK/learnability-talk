@@ -26,17 +26,17 @@
 \begin{frame}
 \frametitle{Protocol design in practice}
 \begin{itemize}
-\item<1-> Implicitly assume certain network conditions
-\item<2-> Implicit performance goals
+\item<2-> Implicitly assume certain network conditions
+\item<3-> Implicit performance goals
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{But, assumptions are always wrong}
 \begin{itemize}
-\item<1-> Stochastic loss in wireless networks
-\item<2-> Bufferbloat in cellular networks
-\item<3-> Incast in datacenter networks
+\item<2-> Stochastic loss in wireless networks
+\item<3-> Bufferbloat in cellular networks
+\item<4-> Incast in datacenter networks
 \end{itemize}
 \end{frame}
 
@@ -51,8 +51,8 @@ an imperfect set of assumptions?
 %TODO: Can throw in figure here per D. Wetherall.
 \frametitle{Mechanizing protocol design}
 \begin{itemize}
-\item <1->Supply training networks to automated protocol synthesis tool (Remy, SIGCOMM 2013) 
-\item <2->Evaluate synthesized protocol on test networks
+\item <2->Supply training networks to automated protocol synthesis tool (Remy, SIGCOMM 2013) 
+\item <3->Evaluate synthesized protocol (RemyCC) on test networks
 \end{itemize}
 \end{frame}
 
@@ -78,36 +78,36 @@ an imperfect set of assumptions?
 \begin{frame}
 \frametitle{Summary of findings}
 \begin{itemize}
-\item<1-> Possible to design for 1000x link speed range
-\item<2-> Simplifying topology doesn't hurt performance
-\item<3-> TCP compatibility is a double-edged sword 
-\item<4-> Tension between low and high degrees of multiplexing
+\item<2-> Possible to design for 1000x link speed range
+\item<3-> Simplifying topology doesn't hurt performance
+\item<4-> TCP compatibility is a double-edged sword 
+\item<5-> Tension between low and high degrees of multiplexing
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Limitations}
 \begin{itemize}
-\item<1-> Very simple experiments
-\item<2-> Results could change with better protocol-synthesis tools
-\item<3-> Do not model real-world imperfections
+\item<2-> Very simple experiments
+\item<3-> Results could change with better protocol-synthesis tools
+\item<4-> Do not model real-world imperfections
 \end{itemize}
 \end{frame}
 \begin{frame}
 
 \frametitle{Ongoing work}
 \begin{itemize}
-\item<1-> Automated synthesis of datacenter congestion control
-\item<2-> Automated synthesis of wide-area congestion control
+\item<2-> Automated synthesis of datacenter congestion control
+\item<3-> Automated synthesis of wide-area congestion control
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Conclusion and outlook}
 \begin{itemize}
-\item<1-> Application needs and network conditions evolve ...
-\item<2-> ... requiruing us to design new transport protocols.
-\item<3-> How hard is it to automate this process like other disciplines have done?
+\item<2-> Applications and networks evolve ...
+\item<3-> ... requiring new transport protocols.
+\item<4-> What assumptions do and don't matter?
 %\item<4-> Paper available at: http://web.mit.edu/anirudh/www/learnability-sigcomm2014.pdf
 \end{itemize}
 \end{frame}
