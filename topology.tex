@@ -10,14 +10,17 @@ Do we need to know the exact topology at design time?
 \large
 \begin{centering}
 
-\textcolor{DarkBlue}{\only<1>{One bottleneck}\only<2>{Two bottlenecks}}
-
+\begin{itemize}
+\item<2-> What if we train on a one-bottleneck topology\\
+\begin{centering}
+\includegraphics[width=0.8\textwidth]{onelink.pdf}
 \end{centering}
-\vspace{\baselineskip}
-\vspace{\baselineskip}
-
-\only<1>{\includegraphics[width=\textwidth]{onelink.pdf}}\only<2>{\includegraphics[width=\textwidth]{twolink.pdf}}
-
+\item<3-> But, test on a two-bottleneck topology\\
+\begin{centering}
+\includegraphics[width=0.8 \textwidth]{twolink.pdf}
+\end{centering}
+\end{itemize}
+\end{centering}
 \end{frame}
 
 \begin{frame}
