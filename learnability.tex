@@ -33,17 +33,19 @@
 
 \begin{frame}
 \frametitle{But, assumptions are always wrong}
+What if
 \begin{itemize}
-\item<2-> Link-speed assumptions: transatlantic cables
-\item<3-> Delay assumptions: satellite links
-\item<4-> Multiplexing assumptions: incast
+\item<2-> Links get much faster? (transatlantic cables, datacenters)
+\item<3-> Degree of multiplexing shoots up? (incast)
+%\item<3-> Delays get longer: satellite links
 \end{itemize}
 \end{frame}
 
 \begin{frame}
+\frametitle{This talk}
 \begin{center}
-How easy is it to “learn” a network protocol to achieve desired goals, given
-an imperfect set of assumptions?
+How easy is it to “learn” a network protocol to achieve a desired goal,
+despite an imperfect set of assumptions?
 \end{center}
 \end{frame}
 
@@ -55,6 +57,8 @@ an imperfect set of assumptions?
 \item <3->Evaluate synthesized protocol (RemyCC) on test networks in ns-2.
 \end{itemize}
 \end{frame}
+
+\input caveats
 
 \input optimality
 
@@ -68,38 +72,21 @@ an imperfect set of assumptions?
 
 \begin{frame}
 \frametitle{The learnability of congestion control}
+\noindent
 \begin{itemize}
-\item<1-> \textcolor{green}{Possible to design for 1000x link speed range}
-\item<2-> \textcolor{red}{Tension between low and high degrees of multiplexing}
-\item<3-> \textcolor{green}{Simplifying topology only mildly hurts performance}
-\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
+\item<1-> We found:
+\begin{itemize}
+\item<2-> \textcolor{green}{Possible to design for wide link speed range}
+\item<3-> \textcolor{red}{Tension between low and high degrees of multiplexing}
+\item<4-> \textcolor{green}{Simplifying topology only mildly hurts performance}
+\item<5-> \textcolor{red}{TCP compatibility is a double-edged sword}
 \end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Limitations}
+\item<6-> Ongoing work in using findings to:
 \begin{itemize}
-\item<2-> Very simple experiments
-\item<3-> Results could change with better protocol-synthesis tools
-\item<4-> Do not model real-world imperfections
+\item<7-> improve Google's datacenter transport
+\item<8-> user-space implementation of RemyCC
 \end{itemize}
-\end{frame}
-\begin{frame}
-
-\frametitle{Ongoing work}
-\begin{itemize}
-\item<2-> Improving Google's congestion-control
-\item<3-> Computer-generated congestion control in the real world
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Conclusion and outlook}
-\begin{itemize}
-\item<2-> Applications and networks evolve ...
-\item<3-> ... requiring new protocols.
-\item<4-> What assumptions do and don't matter?
-%\item<4-> Paper available at: http://web.mit.edu/anirudh/www/learnability-sigcomm2014.pdf
+\item<9-> http://web.mit.edu/remy/learnability
 \end{itemize}
 \end{frame}
 
