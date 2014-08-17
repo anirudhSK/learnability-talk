@@ -9,10 +9,10 @@
 \setbeamertemplate{footline}[frame number]
 \title{An experimental study of the learnability of congestion control}
 \author{Anirudh~Sivaraman, Keith~Winstein, Pratiksha~Thaker, Hari~Balakrishnan}
-\institute{MIT CSAIL\vspace{\baselineskip}}
+\institute{MIT CSAIL\vspace{\baselineskip}\\\textcolor{DarkBlue}{http://web.mit.edu/remy/learnability}
+}
 %\\\textcolor{DarkBlue}{http://web.mit.edu/anirudh/www/sdn-data-plane.html}}
 %\date{}
-
 
 \begin{document}
 
@@ -54,7 +54,7 @@ despite an imperfect set of assumptions?
 \frametitle{Mechanizing protocol design}
 \begin{itemize}
 \item <2->Supply training networks to automated protocol synthesis tool (Remy, SIGCOMM 2013) 
-\item <3->Evaluate synthesized protocol (RemyCC) on test networks in ns-2.
+\item <3->Evaluate synthesized protocol (RemyCC) on test networks in ns-2
 \end{itemize}
 \end{frame}
 
@@ -62,11 +62,61 @@ despite an imperfect set of assumptions?
 
 \input optimality
 
+\begin{frame}
+\frametitle{The learnability of congestion control}
+\begin{itemize}
+\item Link speed
+\item Degree of multiplexing
+\item Topology
+\item Knowledge of other senders
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{The learnability of congestion control}
+\begin{itemize}
+\item \textcolor{blue}{Link speed}
+\item \textcolor{gray}{Degree of multiplexing}
+\item \textcolor{gray}{Topology}
+\item \textcolor{gray}{Knowledge of other senders}
+\end{itemize}
+\end{frame}
+
 \input linkspeed
+
+\begin{frame}
+\frametitle{The learnability of congestion control}
+\begin{itemize}
+\item \textcolor{gray}{Link speed}
+\item \textcolor{blue}{Degree of multiplexing}
+\item \textcolor{gray}{Topology}
+\item \textcolor{gray}{Knowledge of other senders}
+\end{itemize}
+\end{frame}
 
 \input multiplexing
 
+\begin{frame}
+\frametitle{The learnability of congestion control}
+\begin{itemize}
+\item \textcolor{gray}{Link speed}
+\item \textcolor{gray}{Degree of multiplexing}
+\item \textcolor{blue}{Topology}
+\item \textcolor{gray}{Knowledge of other senders}
+\end{itemize}
+\end{frame}
+
 \input topology 
+
+\begin{frame}
+\frametitle{The learnability of congestion control}
+\begin{itemize}
+\item \textcolor{gray}{Link speed}
+\item \textcolor{gray}{Degree of multiplexing}
+\item \textcolor{gray}{Topology}
+\item \textcolor{blue}{Knowledge of other senders}
+\end{itemize}
+\end{frame}
 
 \input compatibility
 
@@ -74,13 +124,10 @@ despite an imperfect set of assumptions?
 \frametitle{The learnability of congestion control}
 \noindent
 \begin{itemize}
-\item<1-> We found:
-\begin{itemize}
-\item<2-> \textcolor{green}{Possible to design for wide link speed range}
-\item<3-> \textcolor{red}{Tension between low and high degrees of multiplexing}
-\item<4-> \textcolor{green}{Simplifying topology only mildly hurts performance}
-\item<5-> \textcolor{red}{TCP compatibility is a double-edged sword}
-\end{itemize}
+\item<1-> \textcolor{green}{Possible to design for wide link speed range}
+\item<2-> \textcolor{red}{Tension between low and high multiplexing}
+\item<3-> \textcolor{green}{Simplifying topology may be acceptable}
+\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
 \item<6-> Ongoing work in using findings to:
 \begin{itemize}
 \item<7-> improve Google's datacenter transport
