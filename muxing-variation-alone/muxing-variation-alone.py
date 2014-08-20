@@ -55,7 +55,7 @@ for j, title in enumerate(order):
     vspanar = None
     if 'Tao' in title:
         num = int(title[8:])
-        vspanar = plt.axvspan(0, num, alpha=0.1, color=col)
+        vspanar = plt.axvspan(0, num, alpha=0.2, color=col)
         plt.savefig("outfiles/muxing-span-" + title.replace(' ', '-').replace('---', '-') + ".pdf", bbox_inches="tight")
     all_colors[title] = col
     ar, = ax.plot(xvals, yvals, color=col, lw=3, label=title)
