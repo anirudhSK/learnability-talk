@@ -1,20 +1,21 @@
 import math
 import numpy as np
+import re
 
 from matplotlib import pyplot as plt
 
 ylims = [-1.5, -5]
 titles = ["Buffer size 5x BDP", "No packet drops"]
-fnames = {"num_senders1--100.plot":("Tao 1 - 100",'fig.text(.8, 0.79, "1 - 100", fontsize=20, rotation=-2, color=all_colors["Tao 1 - 100"])'),
-          "num_senders1--2.plot":("Tao 1 - 2",'fig.text(0.18, 0.40, "1 - 2", fontsize=20, rotation=-87, color=all_colors["Tao 1 - 2"])'),
+fnames = {"num_senders1--100.plot":("Tao 1 - 100",'fig.text(.8, 0.79, "1 - 100", fontsize=20, rotation=-2, color="purple")'),
+          "num_senders1--2.plot":("Tao 1 - 2",'fig.text(0.18, 0.40, "1 - 2", fontsize=20, rotation=-87, color="red")'),
           "num_senderscubicsfqCoDel.plot":("Cubic-over-sfqCoDel",'fig.text(0.65, 0.67, "Cubic-over-sfqCoDel", fontsize=20, rotation=-8, color="#008080")'),
-          "num_senders1--10.plot":("Tao 1 - 10",'fig.text(0.28, 0.30, "1 - 10", fontsize=20, rotation=-86, color=all_colors["Tao 1 - 10"])'),
-          "num_senders1--50.plot":("Tao 1 - 50",'fig.text(0.55, 0.73, "1 - 50", fontsize=20, rotation=-20, color=all_colors["Tao 1 - 50"])'),
-          "num_senders1--20.plot":("Tao 1 - 20",'fig.text(0.43, 0.31, "1 - 20", fontsize=20, rotation=-67, color=all_colors["Tao 1 - 20"])'),
+          "num_senders1--10.plot":("Tao 1 - 10",'fig.text(0.28, 0.30, "1 - 10", fontsize=20, rotation=-86, color="green")'),
+          "num_senders1--50.plot":("Tao 1 - 50",'fig.text(0.55, 0.73, "1 - 50", fontsize=20, rotation=-20, color="brown")'),
+          "num_senders1--20.plot":("Tao 1 - 20",'fig.text(0.43, 0.31, "1 - 20", fontsize=20, rotation=-67, color="blue")'),
           "num_senderscubic.plot":("Cubic",'fig.text(0.55, 0.56, "Cubic", fontsize=20, rotation=5, color="#ff9900")')
           }
 
-order=['Cubic', 'Cubic-over-sfqCoDel', 'Tao 1 - 2', 'Tao 1 - 10', 'Tao 1 - 20', 'Tao 1 - 50', 'Tao 1 - 100']
+order=['Tao 1 - 2', 'Tao 1 - 10', 'Tao 1 - 20', 'Tao 1 - 50', 'Tao 1 - 100', 'Cubic', 'Cubic-over-sfqCoDel']
 colors = plt.get_cmap('Paired')(np.linspace(0, 1.0, 7))
 
 fig = plt.figure()
@@ -47,18 +48,14 @@ for j, title in enumerate(order):
         a.set_alpha(0.3)
     yvals = [normalize(float(d[2]), float(d[1])) for d in data]
     xvals = [float(d[0]) for d in data]
-    col = colors[j]
-    if 'CoDel' in title:
-        col = "#008080"
-    elif 'Cubic' in title:
-        col = "#ff9900"
+    col = re.search('color="(.*?)"', linelabel).group(1)
     vspanar = None
     if 'Tao' in title:
         num = int(title[8:])
         vspanar = plt.axvspan(0, num, alpha=0.2, color=col)
         plt.savefig("outfiles/muxing-span-" + title.replace(' ', '-').replace('---', '-') + ".pdf", bbox_inches="tight")
     all_colors[title] = col
-    ar, = ax.plot(xvals, yvals, color=col, lw=3, label=title)
+    ar, = ax.plot(xvals, yvals, color=col, lw=3, label=title, alpha=1.0)
     artists.append(ar)
 
     eval(linelabel)
