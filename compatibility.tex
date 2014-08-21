@@ -8,8 +8,15 @@ What are the costs and benefits of learning a new protocol that shares fairly wi
 \begin{frame}
 \frametitle{Imperfect assumptions about the nature of other senders}
 \begin{itemize}
-\item<1-> \textbf{TCP-Aware} RemyCC: Assumed to run against another \textbf{TCP-Aware} RemyCC half the time, and against TCP NewReno half the time.
-\item<2-> \textbf{TCP-Naive} RemyCC: Assumed to run only against another \textbf{TCP-Naive} RemyCC
+\item<1-> \textbf{TCP-Aware} RemyCC: Assumed to run against:
+ \begin{itemize}
+ \item A \textbf{TCP-Aware} RemyCC half the time
+ \item TCP NewReno half the time.
+ \end{itemize}
+\item<2-> \textbf{TCP-Naive} RemyCC: Assumed to run against:
+ \begin{itemize}
+ \item Another \textbf{TCP-Naive} RemyCC all the time
+ \end{itemize}
 \end{itemize}
 \end{frame}
 
