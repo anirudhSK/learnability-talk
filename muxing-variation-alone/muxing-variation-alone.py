@@ -45,10 +45,6 @@ def normalize(x, y):
 
 for j, title in enumerate(order):
     data, linelabel = all_data[title]
-    if '1 - 100' in title:
-        for a in artists:
-            a.set_alpha(0.0)
-        artists = []
     for a in artists:
         a.set_alpha(0.3)
     yvals = [normalize(float(d[2]), float(d[1])) for d in data]
@@ -61,11 +57,21 @@ for j, title in enumerate(order):
         plt.savefig("outfiles/muxing-span-" + title.replace(' ', '-').replace('---', '-') + ".pdf", bbox_inches="tight")
     all_colors[title] = col
     ar, = ax.plot(xvals, yvals, color=col, lw=3, label=title, alpha=1.0)
-    artists.append(ar)
-
     txtar = eval(linelabel)
-    artists.append(txtar)
 
     plt.savefig("outfiles/muxing-" + title.replace(' ', '-').replace('---', '-') + ".pdf", bbox_inches="tight")
+
+    if '1 - 100' in title:
+        for a in artists:
+            a.set_alpha(0.0)
+        artists = []
+        if vspanar:
+            vspanar.remove()
+            vspanar = None
+        plt.savefig("outfiles/muxing-100-only.pdf", bbox_inches="tight")
+
+    artists.append(ar)
+    artists.append(txtar)
+
     if vspanar:
         vspanar.remove()
