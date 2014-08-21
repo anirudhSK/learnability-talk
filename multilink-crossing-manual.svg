@@ -44,11 +44,11 @@
      showgrid="false"
      inkscape:zoom="1.2646927"
      inkscape:cx="168.34897"
-     inkscape:cy="211.36197"
+     inkscape:cy="274.61844"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer7"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -573,15 +573,15 @@
     <text
        xml:space="preserve"
        style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L"
-       x="125.91245"
-       y="244.36371"
+       x="154.54594"
+       y="244.02019"
        id="text4193"
        sodipodi:linespacing="125%"
        transform="matrix(0.91292048,-0.40813748,0.40813748,0.91292048,0,0)"><tspan
          sodipodi:role="line"
-         x="125.91245"
-         y="244.36371"
-         id="tspan4197">Omniscient protocol</tspan></text>
+         x="154.54594"
+         y="244.02019"
+         id="tspan4197">Ideal protocol</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
