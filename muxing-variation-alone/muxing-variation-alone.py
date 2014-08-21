@@ -20,6 +20,7 @@ colors = plt.get_cmap('Paired')(np.linspace(0, 1.0, 7))
 
 fig = plt.figure()
 artists = []
+txtartists = []
 all_colors = {}
 all_data = {}
 
@@ -36,7 +37,7 @@ plt.xlim(0, 100)
 plt.ylim(-1.5, 1.5*0.05)
 plt.savefig("outfiles/muxing-base.pdf", bbox_inches="tight")
 ax.plot([0, 100], [0, 0], linewidth=3, color="black")
-fig.text(0.25, 0.87, "Omniscient", fontsize=20, color="black")
+fig.text(0.25, 0.87, "Ideal", fontsize=20, color="black")
 plt.savefig("outfiles/muxing-omniscient.pdf", bbox_inches="tight")
 
 def normalize(x, y):
@@ -44,6 +45,10 @@ def normalize(x, y):
 
 for j, title in enumerate(order):
     data, linelabel = all_data[title]
+    if '1 - 100' in title:
+        for a in artists:
+            a.set_alpha(0.0)
+        artists = []
     for a in artists:
         a.set_alpha(0.3)
     yvals = [normalize(float(d[2]), float(d[1])) for d in data]
@@ -58,7 +63,8 @@ for j, title in enumerate(order):
     ar, = ax.plot(xvals, yvals, color=col, lw=3, label=title, alpha=1.0)
     artists.append(ar)
 
-    eval(linelabel)
+    txtar = eval(linelabel)
+    artists.append(txtar)
 
     plt.savefig("outfiles/muxing-" + title.replace(' ', '-').replace('---', '-') + ".pdf", bbox_inches="tight")
     if vspanar:
