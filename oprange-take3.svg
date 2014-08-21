@@ -420,7 +420,7 @@
      inkscape:groupmode="layer"
      id="layer24"
      inkscape:label="cubic"
-     style="display:none">
+     style="display:inline">
     <g
        transform="translate(139.85744,7.2269265)"
        style="color:#ff9900;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;display:inline"
@@ -449,7 +449,7 @@
      inkscape:groupmode="layer"
      id="layer25"
      inkscape:label="codel"
-     style="display:none">
+     style="display:inline">
     <text
        xml:space="preserve"
        style="font-size:14.76383495px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008080;fill-opacity:0.82352941;stroke:none;display:inline;font-family:Nimbus Sans L;-inkscape-font-specification:'Nimbus Sans L, Normal'"
