@@ -33,11 +33,10 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{But, assumptions are always wrong}
-What if
+\frametitle{But, assumptions eventually don't hold}
 \begin{itemize}
-\item<2-> Links get much faster? (transatlantic cables, datacenters)
-\item<3-> Number of senders increases? (incast)
+\item<2-> Links become much faster (transatlantic cables, datacenters)
+\item<3-> The number of senders increases (incast)
 %\item<3-> Delays get longer: satellite links
 \end{itemize}
 \end{frame}
@@ -53,15 +52,15 @@ despite an imperfect set of assumptions?}
 %\end{itemize}
 \end{frame}
 
-\begin{frame}
-\frametitle{What we found}
-\begin{itemize}
-\item<2-> \textcolor{darkgreen}{Can be imprecise about the link speeds}
-\item<3-> \textcolor{red}{Need to be precise about the number of senders}
-%\item<3-> \textcolor{darkgreen}{Simplifying topology may be acceptable}
-%\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
-\end{itemize}
-\end{frame}
+%%\begin{frame}
+%%\frametitle{What we answer}
+%%\begin{itemize}
+%%\item<2-> Can we tolerate imperfection in link-speed assumptions?
+%%\item<3-> Can we tolerate imperfection in assumptions regarding the number of senders?
+%%%\item<3-> \textcolor{darkgreen}{Simplifying topology may be acceptable}
+%%%\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
+%%\end{itemize}
+%%\end{frame}
 
 \begin{frame}
 \frametitle{Experimental method}
@@ -73,79 +72,13 @@ despite an imperfect set of assumptions?}
 \noindent \only<1>{\includegraphics[width=4.5 in]{mechanize-1.pdf}}\only<2>{\includegraphics[width=4.5 in]{mechanize-2.pdf}}\only<3>{\includegraphics[width=4.5 in]{mechanize-3.pdf}}\only<4>{\includegraphics[width=4.5 in]{mechanize-4.pdf}}\only<5>{\includegraphics[width=4.5 in]{mechanize-5.pdf}}
 \end{frame}
 
-\begin{frame}
-\frametitle{The learnability of congestion control}
-\begin{itemize}
-\item RemyCC compared with an omniscient protocol
-\item Imperfections in the link speed
-\item Imperfections in the number of senders
-\item Imperfections in the number of bottlenecks
-\item Imperfections in the knowledge of other senders
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{The learnability of congestion control}
-\begin{itemize}
-\item RemyCC compared with an omniscient protocol
-\item Imperfections in the link speed
-\item Imperfections in the number of senders
-\item Imperfections in the number of bottlenecks
-\item Imperfections in the knowledge of other senders
-\end{itemize}
-\end{frame}
-
 \input optimality
-
-\begin{frame}
-\frametitle{The learnability of congestion control}
-\begin{itemize}
-\item RemyCC compared with an omniscient protocol
-\item Imperfections in the link speed
-\item Imperfections in the number of senders
-\item Imperfections in the number of bottlenecks
-\item Imperfections in the knowledge of other senders
-\end{itemize}
-\end{frame}
 
 \input linkspeed
 
-\begin{frame}
-\frametitle{The learnability of congestion control}
-\begin{itemize}
-\item RemyCC compared with an omniscient protocol
-\item Imperfections in the link speed
-\item Imperfections in the number of senders
-\item Imperfections in the number of bottlenecks
-\item Imperfections in the knowledge of other senders
-\end{itemize}
-\end{frame}
-
 \input multiplexing
 
-\begin{frame}
-\frametitle{The learnability of congestion control}
-\begin{itemize}
-\item RemyCC compared with an omniscient protocol
-\item Imperfections in the link speed
-\item Imperfections in the number of senders
-\item Imperfections in the number of bottlenecks
-\item Imperfections in the knowledge of other senders
-\end{itemize}
-\end{frame}
-
-\input topology 
-
-\begin{frame}
-\frametitle{The learnability of congestion control}
-\begin{itemize}
-\item RemyCC compared with an omniscient protocol
-\item Imperfections in the link speed
-\item Imperfections in the number of senders
-\item Imperfections in the number of bottlenecks
-\item Imperfections in the knowledge of other senders
-\end{itemize}
-\end{frame}
+%\input topology 
 
 \input compatibility
 
@@ -153,7 +86,7 @@ despite an imperfect set of assumptions?}
 \frametitle{Limitations}
 \begin{itemize}
 \item<2-> Remy as a proxy for an optimal protocol design procedure
-\item<3-> Results could change with better protocol-synthesis tools
+\item<3-> Results could change with better protocol learners
 \item<4-> Negative results may no longer hold
 \end{itemize}
 \end{frame}
@@ -162,29 +95,24 @@ despite an imperfect set of assumptions?}
 \frametitle{The learnability of congestion control}
 \noindent
 \begin{itemize}
-\item<2-> \textcolor{darkgreen}{Can be imprecise about the link speeds}
-\item<3-> \textcolor{red}{Need to be precise about the number of senders}
-\item<4-> \textcolor{darkgreen}{Simplifying topology may be acceptable}
-\item<5-> \textcolor{red}{TCP compatibility is a double-edged sword}
-\item<6-> Ongoing work in using findings to:
+\item<2-> \textcolor{darkgreen}{Can tolerate imperfect link-rate assumptions}
+\item<3-> \textcolor{red}{Need precision about the number of senders}
+%\item<4-> \textcolor{darkgreen}{Can tolerate imperfection in the \# of bottlenecks}
+\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
+\item<5-> Ongoing work in using findings to:
 \begin{itemize}
-\item<2-> improve Google's datacenter transport
-\item<3-> user-space implementation of RemyCC
+\item<6-> improve Google's datacenter transport
+\item<7-> user-space implementation of RemyCC
 \end{itemize}
-\item<7-> http://web.mit.edu/remy/learnability
+\item<8-> http://web.mit.edu/remy/learnability
 \end{itemize}
 \end{frame}
 
 \end{Large}
 
-\begin{frame}
+\begin{frame}[noframenumbering]
 \frametitle{Backup slides}
 \end{frame}
-\input caveats
-
 \input remy
-
-
-\input topology
 \input diversity
 \end{document}
