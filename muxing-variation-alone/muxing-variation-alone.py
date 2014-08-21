@@ -1,5 +1,5 @@
 import math
-import numpy as np
+#import numpy as np
 import re
 
 from matplotlib import pyplot as plt
@@ -15,12 +15,11 @@ fnames = {"num_senders1--100.plot":("Tao 1 - 100",'fig.text(.8, 0.79, "1 - 100",
           "num_senderscubic.plot":("Cubic",'fig.text(0.55, 0.56, "Cubic", fontsize=20, rotation=5, color="#ff9900")')
           }
 
-order=['Tao 1 - 2', 'Tao 1 - 10', 'Tao 1 - 20', 'Tao 1 - 50', 'Tao 1 - 100', 'Cubic', 'Cubic-over-sfqCoDel']
-colors = plt.get_cmap('Paired')(np.linspace(0, 1.0, 7))
+order=['Tao 1 - 2', 'Tao 1 - 10', 'Tao 1 - 50', 'Tao 1 - 100', 'Cubic', 'Cubic-over-sfqCoDel']
+#colors = plt.get_cmap('Paired')(np.linspace(0, 1.0, 7))
 
 fig = plt.figure()
-artists = []
-txtartists = []
+artists = {}
 all_colors = {}
 all_data = {}
 
@@ -45,8 +44,9 @@ def normalize(x, y):
 
 for j, title in enumerate(order):
     data, linelabel = all_data[title]
-    for a in artists:
-        a.set_alpha(0.3)
+    for ar_title, (artist, text_artist) in artists.iteritems():
+        artist.set_alpha(0.4)
+        text_artist.set_alpha(0.4)
     yvals = [normalize(float(d[2]), float(d[1])) for d in data]
     xvals = [float(d[0]) for d in data]
     col = re.search('color="(.*?)"', linelabel).group(1)
@@ -62,16 +62,17 @@ for j, title in enumerate(order):
     plt.savefig("outfiles/muxing-" + title.replace(' ', '-').replace('---', '-') + ".pdf", bbox_inches="tight")
 
     if '1 - 100' in title:
-        for a in artists:
-            a.set_alpha(0.0)
-        artists = []
+        for ar_title, (artist, text_artist) in artists.iteritems():
+            if ('1 - 10' not in ar_title) and ('1 - 100' not in ar_title):
+                artist.set_alpha(0.0)
+                text_artist.set_alpha(0.0)
+        artists = {}
         if vspanar:
             vspanar.remove()
             vspanar = None
-        plt.savefig("outfiles/muxing-100-only.pdf", bbox_inches="tight")
+        plt.savefig("outfiles/muxing-100-and-10-only.pdf", bbox_inches="tight")
 
-    artists.append(ar)
-    artists.append(txtar)
+    artists[title] = (ar, txtar)
 
     if vspanar:
         vspanar.remove()
