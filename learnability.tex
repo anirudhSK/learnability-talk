@@ -13,6 +13,7 @@
 }
 %\\\textcolor{DarkBlue}{http://web.mit.edu/anirudh/www/sdn-data-plane.html}}
 %\date{}
+\definecolor{darkgreen}{rgb}{0.0, 0.2, 0.13}
 
 \begin{document}
 
@@ -51,6 +52,16 @@ despite an imperfect set of assumptions?}
 \end{frame}
 
 \begin{frame}
+\frametitle{What we found}
+\begin{itemize}
+\item<1-> \textcolor{darkgreen}{Possible to design for wide link speed range}
+\item<2-> \textcolor{red}{Tension between low and high multiplexing}
+\item<3-> \textcolor{darkgreen}{Simplifying topology may be acceptable}
+\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
 \frametitle{Automating protocol design}
 \noindent \only<2>{\includegraphics[width=5.5 in]{network-base.pdf}}\only<3>{\includegraphics[width=5.5 in]{network-link.pdf}}\only<4>{\includegraphics[width=5.5 in]{network-senders.pdf}}\only<5>{\includegraphics[width=5.5 in]{network-receivers.pdf}}\only<6>{\includegraphics[width=5.5in]{network-application.pdf}}\only<7>{\includegraphics[width=5.5 in]{network-onemore.pdf}}
 \end{frame}
@@ -59,8 +70,6 @@ despite an imperfect set of assumptions?}
 \frametitle{Automating protocol design}
 \noindent \only<1>{\includegraphics[width=3.5 in]{mechanize-1.pdf}}\only<2>{\includegraphics[width=3.5 in]{mechanize-2.pdf}}\only<3>{\includegraphics[width=3.5 in]{mechanize-3.pdf}}\only<4>{\includegraphics[width=3.5 in]{mechanize-4.pdf}}\only<5>{\includegraphics[width=3.5 in]{mechanize-5.pdf}}
 \end{frame}
-
-\input caveats
 
 \begin{frame}
 \frametitle{The learnability of congestion control}
@@ -139,19 +148,24 @@ despite an imperfect set of assumptions?}
 \input compatibility
 
 \begin{frame}
+\frametitle{Limitations}
+\begin{itemize}
+\item<2-> Remy as a proxy for an optimal protocol design procedure
+\item<3-> Results could change with better protocol-synthesis tools
+\item<4-> Negative results may no longer hold
+\end{itemize}
+\end{frame}
+
+\begin{frame}
 \frametitle{The learnability of congestion control}
 \noindent
 \begin{itemize}
-\item<1-> \textcolor{green}{Possible to design for wide link speed range}
-\item<2-> \textcolor{red}{Tension between low and high multiplexing}
-\item<3-> \textcolor{green}{Simplifying topology may be acceptable}
-\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
-\item<6-> Ongoing work in using findings to:
+\item<1-> Ongoing work in using findings to:
 \begin{itemize}
-\item<7-> improve Google's datacenter transport
-\item<8-> user-space implementation of RemyCC
+\item<2-> improve Google's datacenter transport
+\item<3-> user-space implementation of RemyCC
 \end{itemize}
-\item<9-> http://web.mit.edu/remy/learnability
+\item<4-> http://web.mit.edu/remy/learnability
 \end{itemize}
 \end{frame}
 
