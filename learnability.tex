@@ -27,7 +27,7 @@
 \begin{frame}
 \frametitle{Congestion-control protocols today}
 \begin{itemize}
-\item<2-> Implicitly assume certain network conditions
+\item<2-> Implicit assumptions
 \item<3-> Implicit performance goals
 \end{itemize}
 \end{frame}
@@ -37,38 +37,40 @@
 What if
 \begin{itemize}
 \item<2-> Links get much faster? (transatlantic cables, datacenters)
-\item<3-> Degree of multiplexing shoots up? (incast)
+\item<3-> Number of senders increases? (incast)
 %\item<3-> Delays get longer: satellite links
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{This talk}
-\begin{itemize}
+%\begin{itemize}
+\begin{center}
 \item<1->{How easy is it to “learn” a network protocol to achieve a desired goal,
 despite an imperfect set of assumptions?}
-\item<2->{cf. Learning: ``Knowledge acquisition without explicit programming'' (Valiant 1984)}
-\end{itemize}
+\end{center}
+%\item<2->{cf. Learning: ``Knowledge acquisition without explicit programming'' (Valiant 1984)}
+%\end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{What we found}
 \begin{itemize}
-\item<1-> \textcolor{darkgreen}{Possible to design for wide link speed range}
-\item<2-> \textcolor{red}{Tension between low and high multiplexing}
-\item<3-> \textcolor{darkgreen}{Simplifying topology may be acceptable}
-\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
+\item<2-> \textcolor{darkgreen}{Can be imprecise about the link speeds}
+\item<3-> \textcolor{red}{Need to be precise about the number of senders}
+%\item<3-> \textcolor{darkgreen}{Simplifying topology may be acceptable}
+%\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Automating protocol design}
+\frametitle{Experimental method}
 \noindent \only<2>{\includegraphics[width=5.5 in]{network-base.pdf}}\only<3>{\includegraphics[width=5.5 in]{network-link.pdf}}\only<4>{\includegraphics[width=5.5 in]{network-senders.pdf}}\only<5>{\includegraphics[width=5.5 in]{network-receivers.pdf}}\only<6>{\includegraphics[width=5.5in]{network-application.pdf}}\only<7>{\includegraphics[width=5.5 in]{network-onemore.pdf}}
 \end{frame}
 
 \begin{frame}
-\frametitle{Automating protocol design}
-\noindent \only<1>{\includegraphics[width=3.5 in]{mechanize-1.pdf}}\only<2>{\includegraphics[width=3.5 in]{mechanize-2.pdf}}\only<3>{\includegraphics[width=3.5 in]{mechanize-3.pdf}}\only<4>{\includegraphics[width=3.5 in]{mechanize-4.pdf}}\only<5>{\includegraphics[width=3.5 in]{mechanize-5.pdf}}
+\frametitle{Experimental method}
+\noindent \only<1>{\includegraphics[width=4.5 in]{mechanize-1.pdf}}\only<2>{\includegraphics[width=4.5 in]{mechanize-2.pdf}}\only<3>{\includegraphics[width=4.5 in]{mechanize-3.pdf}}\only<4>{\includegraphics[width=4.5 in]{mechanize-4.pdf}}\only<5>{\includegraphics[width=4.5 in]{mechanize-5.pdf}}
 \end{frame}
 
 \begin{frame}
