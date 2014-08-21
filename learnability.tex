@@ -24,43 +24,41 @@
 \end{frame}
 
 \begin{Large}
-\begin{frame}
-\frametitle{Congestion-control protocols today}
-\begin{itemize}
-\item<2-> Implicit assumptions
-\item<3-> Implicit performance goals
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{But, assumptions eventually don't hold}
-\begin{itemize}
-\item<2-> Links become much faster (transatlantic cables, datacenters)
-\item<3-> The number of senders increases (incast)
-%\item<3-> Delays get longer: satellite links
-\end{itemize}
-\end{frame}
+%%%\begin{frame}
+%%%\frametitle{Congestion-control protocols today}
+%%%\begin{itemize}
+%%%\item<2-> Implicit assumptions
+%%%\item<3-> Implicit performance goals
+%%%\end{itemize}
+%%%\end{frame}
+%%%
+%%%\begin{frame}
+%%%\frametitle{But, assumptions eventually don't hold}
+%%%\begin{itemize}
+%%%\item<2-> Links become much faster (transatlantic cables, datacenters)
+%%%\item<3-> The number of senders increases (incast)
+%%%%\item<3-> Delays get longer: satellite links
+%%%\end{itemize}
+%%%\end{frame}
 
 \begin{frame}
 \frametitle{This talk}
-%\begin{itemize}
-\begin{center}
+\begin{itemize}
 \item<1->{How easy is it to “learn” a network protocol to achieve a desired goal,
 despite an imperfect set of assumptions?}
-\end{center}
-%\item<2->{cf. Learning: ``Knowledge acquisition without explicit programming'' (Valiant 1984)}
-%\end{itemize}
+\item<2->{cf. Learning: ``Knowledge acquisition without explicit programming'' (Valiant 1984)}
+\end{itemize}
 \end{frame}
 
-%%\begin{frame}
-%%\frametitle{What we answer}
-%%\begin{itemize}
-%%\item<2-> Can we tolerate imperfection in link-speed assumptions?
-%%\item<3-> Can we tolerate imperfection in assumptions regarding the number of senders?
-%%%\item<3-> \textcolor{darkgreen}{Simplifying topology may be acceptable}
-%%%\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
-%%\end{itemize}
-%%\end{frame}
+\begin{frame}
+\frametitle{Preview of key results}
+\begin{itemize}
+\item<2-> \textcolor{darkgreen}{Can tolerate imperfect link-rate assumptions}
+\item<3-> \textcolor{red}{Need precision about the number of senders}
+\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
+\item<5-> \textcolor{darkgreen}{Can tolerate imperfection in the \# of bottlenecks}
+\end{itemize}
+\end{frame}
 
 \begin{frame}
 \frametitle{Experimental method}
@@ -83,7 +81,7 @@ despite an imperfect set of assumptions?}
 \input compatibility
 
 \begin{frame}
-\frametitle{Limitations}
+\frametitle{Caveats}
 \begin{itemize}
 \item<2-> Remy as a proxy for an optimal protocol design procedure
 \item<3-> Results could change with better protocol learners
@@ -97,14 +95,14 @@ despite an imperfect set of assumptions?}
 \begin{itemize}
 \item<2-> \textcolor{darkgreen}{Can tolerate imperfect link-rate assumptions}
 \item<3-> \textcolor{red}{Need precision about the number of senders}
-%\item<4-> \textcolor{darkgreen}{Can tolerate imperfection in the \# of bottlenecks}
 \item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
-\item<5-> Ongoing work in using findings to:
+\item<5-> \textcolor{darkgreen}{Can tolerate imperfection in the \# of bottlenecks}
+\item<6-> Ongoing work in using findings to:
 \begin{itemize}
-\item<6-> improve Google's datacenter transport
-\item<7-> user-space implementation of RemyCC
+\item<7-> improve Google's datacenter transport
+\item<8-> user-space implementation of RemyCC
 \end{itemize}
-\item<8-> http://web.mit.edu/remy/learnability
+\item<9-> http://web.mit.edu/remy/learnability
 \end{itemize}
 \end{frame}
 
