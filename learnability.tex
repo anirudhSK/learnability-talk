@@ -5,11 +5,14 @@
 \usepackage{color}
 \usepackage{colortbl}
 \usepackage{pbox}
+\usepackage{import, fancybox, graphicx, color, colortbl, bm, transparent, verbatim}
+\newcommand{\ssline}{\vspace{8 pt}}
 \setbeamerfont{page number in head/foot}{size=\large}
 \setbeamertemplate{footline}[frame number]
 \title{An experimental study of the learnability of congestion control}
 \author{Anirudh~Sivaraman, Keith~Winstein, Pratiksha~Thaker, Hari~Balakrishnan}
-\institute{MIT CSAIL\vspace{\baselineskip}\\\textcolor{DarkBlue}{http://web.mit.edu/remy/learnability}
+\institute{MIT CSAIL\vspace{\baselineskip}\\\textcolor{DarkBlue}{http://web.mit.edu/remy/learnability}\\
+Some slides courtesy of Keith Winstein
 }
 %\\\textcolor{DarkBlue}{http://web.mit.edu/anirudh/www/sdn-data-plane.html}}
 %\date{}
@@ -42,23 +45,53 @@
 %%%\end{frame}
 
 \begin{frame}
-\frametitle{This talk}
+\frametitle{Congestion Control}
+\begin{center}
+Problem of allocating finite network resources among competing users
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Congestion Control as an optimization problem}
 \begin{itemize}
-\item<1->{How easy is it to “learn” a network protocol to achieve a desired goal,
-despite a mismatched set of assumptions?}
-\item<2->{cf. Learning: ``Knowledge acquisition without explicit programming'' (Valiant 1984)}
+\item {\bf \textcolor{DarkBlue}{Kelly, Maulloo \& Tan (1998):}} optimization problem that TCP solves {\it asymptotically}
+
+\item[]
+
+\item {\bf \textcolor{DarkBlue}{Yi \& Chiang (2008):}} stochastic network utility maximization
+
+\item[]
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Preview of key results}
+\frametitle{This talk}
 \begin{itemize}
-\item<2-> \textcolor{darkgreen}{Can tolerate mismatched link-rate assumptions}
-\item<3-> \textcolor{red}{Need precision about the number of senders}
-\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
-\item<5-> \textcolor{darkgreen}{Can tolerate mismatch in the \# of bottlenecks}
+\item<1-> Remy: A tool to {\bf construct} new congestion-control protocols \\
+({\tiny Keith Winstein and Hari Balakrishnan, \textbf{TCP ex Machina: Computer-Generated Congestion Control}, \textit{SIGCOMM 2013}})
+
+\item<2->{How easy is it to “learn” a network protocol to achieve a desired goal,
+despite a mismatched set of assumptions?} \\
+({\tiny Anirudh Sivaraman, Keith Winstein, Pratiksha Thaker, and Hari Balakrishnan,
+\textbf{An Experimental Study of the Learnability of Congestion
+  Control}, \textit{SIGCOMM 2014}
+})
+
+\item<3->{cf. Learning: ``Knowledge acquisition without explicit programming'' (Valiant 1984)}
 \end{itemize}
+
+
 \end{frame}
+
+%%\begin{frame}
+%%\frametitle{Preview of key results}
+%%\begin{itemize}
+%%\item<2-> \textcolor{darkgreen}{Can tolerate mismatched link-rate assumptions}
+%%\item<3-> \textcolor{red}{Need precision about the number of senders}
+%%\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
+%%\item<5-> \textcolor{darkgreen}{Can tolerate mismatch in the \# of bottlenecks}
+%%\end{itemize}
+%%\end{frame}
 
 \begin{frame}
 \frametitle{Experimental method}
@@ -70,13 +103,15 @@ despite a mismatched set of assumptions?}
 \noindent \only<1>{\includegraphics[width=4.5 in]{mechanize-1.pdf}}\only<2>{\includegraphics[width=4.5 in]{mechanize-2.pdf}}\only<3>{\includegraphics[width=4.5 in]{mechanize-3.pdf}}\only<4>{\includegraphics[width=4.5 in]{mechanize-4.pdf}}\only<5>{\includegraphics[width=4.5 in]{mechanize-5.pdf}}
 \end{frame}
 
+\input remy
+
 \input optimality
 
 \input linkspeed
 
 \input multiplexing
 
-%\input topology 
+\input topology 
 
 \input compatibility
 
@@ -85,7 +120,7 @@ despite a mismatched set of assumptions?}
 \begin{itemize}
 \item<2-> Remy as a proxy for an optimal learner
 \item<3-> Results may change with better learners
-\item<4-> Negative results may no longer hold
+%\item<4-> Negative results may no longer hold
 \end{itemize}
 \end{frame}
 
@@ -95,8 +130,8 @@ despite a mismatched set of assumptions?}
 \begin{itemize}
 \item<2-> \textcolor{darkgreen}{Can tolerate mismatched link-rate assumptions}
 \item<3-> \textcolor{red}{Need precision about the number of senders}
-\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
-\item<5-> \textcolor{darkgreen}{Can tolerate mismatch in the \# of bottlenecks}
+\item<4-> \textcolor{darkgreen}{Can tolerate mismatch in the \# of bottlenecks}
+\item<5-> \textcolor{red}{TCP compatibility is a double-edged sword}
 \item<6-> Ongoing work in using findings:
 \begin{itemize}
 \item<7-> improve Google's datacenter transport
@@ -111,6 +146,5 @@ despite a mismatched set of assumptions?}
 \begin{frame}[noframenumbering]
 \frametitle{Backup slides}
 \end{frame}
-\input remy
 \input diversity
 \end{document}
