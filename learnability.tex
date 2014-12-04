@@ -50,15 +50,15 @@ despite a mismatched set of assumptions?}
 \end{itemize}
 \end{frame}
 
-\begin{frame}
-\frametitle{Preview of key results}
-\begin{itemize}
-\item<2-> \textcolor{darkgreen}{Can tolerate mismatched link-rate assumptions}
-\item<3-> \textcolor{red}{Need precision about the number of senders}
-\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
-\item<5-> \textcolor{darkgreen}{Can tolerate mismatch in the \# of bottlenecks}
-\end{itemize}
-\end{frame}
+%%\begin{frame}
+%%\frametitle{Preview of key results}
+%%\begin{itemize}
+%%\item<2-> \textcolor{darkgreen}{Can tolerate mismatched link-rate assumptions}
+%%\item<3-> \textcolor{red}{Need precision about the number of senders}
+%%\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
+%%\item<5-> \textcolor{darkgreen}{Can tolerate mismatch in the \# of bottlenecks}
+%%\end{itemize}
+%%\end{frame}
 
 \begin{frame}
 \frametitle{Experimental method}
@@ -76,7 +76,7 @@ despite a mismatched set of assumptions?}
 
 \input multiplexing
 
-%\input topology 
+\input topology 
 
 \input compatibility
 
@@ -97,14 +97,36 @@ despite a mismatched set of assumptions?}
 \item<3-> \textcolor{red}{Need precision about the number of senders}
 \item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
 \item<5-> \textcolor{darkgreen}{Can tolerate mismatch in the \# of bottlenecks}
-\item<6-> Ongoing work in using findings:
-\begin{itemize}
-\item<7-> improve Google's datacenter transport
-\item<8-> user-space implementation of RemyCC
-\end{itemize}
-\item<9-> http://web.mit.edu/remy/learnability
 \end{itemize}
 \end{frame}
+
+\begin{frame}
+% Maybe three separate slides: WANs, datacenters, switch support
+\frametitle{Ongoing work: Learning protocols for wide-area networks}
+\begin{itemize}
+\item Improving file transfer/sync on lossy wide-area links.
+\item Improving page-load times on high-delay links. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ongoing work: A learning datacenter}
+\begin{itemize}
+\item Objective: Tail flow completion time for short flows
+\item Topology fixed
+\item Workload varies spatially and temporally
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ongoing work: Learning protocols with network assistance}
+\begin{itemize}
+\item No silver bullet ...
+\item More programmable switches
+\end{itemize}
+\end{frame}
+
+%\item<9-> http://web.mit.edu/remy/learnability
 
 \end{Large}
 
