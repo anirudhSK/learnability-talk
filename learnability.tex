@@ -90,43 +90,55 @@ despite a mismatched set of assumptions?}
 \end{frame}
 
 \begin{frame}
+\begin{center}
+Learnability in the real world
+\end{center}
+\end{frame}
+
+% Maybe three separate slides: WANs, datacenters, switch support
+\begin{frame}
+\frametitle{Protocols for wide-area networks}
+\begin{itemize}
+\item<1-> Objectives:
+\begin{itemize}
+\item File-transfer times
+\item Page-load times
+\item Stall-free video
+\end{itemize}
+\item<2-> Do we need to optimize for each objective separately?
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Learning datacenters}
+\begin{itemize}
+\item<1-> Objective: tail flow-completion time for short flows
+\item<2-> Workload varies spatially and temporally
+\item<3-> Optimize for each workload separately?
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Network-assisted congestion control}
+\begin{itemize}
+\item<1-> No single in-network scheme is best [ref].
+\item<2-> Flexible switch architectures (TPP, RMT).
+\item<3-> Does switch support for congestion control change any of
+our conclusions?
+\end{itemize}
+\end{frame}
+
+\begin{frame}
 \frametitle{The learnability of congestion control}
 \noindent
 \begin{itemize}
 \item<2-> \textcolor{darkgreen}{Can tolerate mismatched link-rate assumptions}
 \item<3-> \textcolor{red}{Need precision about the number of senders}
-\item<4-> \textcolor{red}{TCP compatibility is a double-edged sword}
-\item<5-> \textcolor{darkgreen}{Can tolerate mismatch in the \# of bottlenecks}
+\item<4-> \textcolor{darkgreen}{Can tolerate mismatch in the \# of bottlenecks}
+\item<5-> \textcolor{red}{TCP compatibility is a double-edged sword}
+\item<6-> http://web.mit.edu/remy/learnability
 \end{itemize}
 \end{frame}
-
-\begin{frame}
-% Maybe three separate slides: WANs, datacenters, switch support
-\frametitle{Ongoing work: Learning protocols for wide-area networks}
-\begin{itemize}
-\item Improving file transfer/sync on lossy wide-area links.
-\item Improving page-load times on high-delay links. 
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Ongoing work: A learning datacenter}
-\begin{itemize}
-\item Objective: Tail flow completion time for short flows
-\item Topology fixed
-\item Workload varies spatially and temporally
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Ongoing work: Learning protocols with network assistance}
-\begin{itemize}
-\item No silver bullet ...
-\item More programmable switches
-\end{itemize}
-\end{frame}
-
-%\item<9-> http://web.mit.edu/remy/learnability
 
 \end{Large}
 
